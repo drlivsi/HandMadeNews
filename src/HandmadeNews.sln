@@ -5,9 +5,9 @@ VisualStudioVersion = 17.4.33006.217
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandmadeNews.AzureFunc", "HandmadeNews.AzureFunc\HandmadeNews.AzureFunc.csproj", "{531B8955-8B30-45AE-8C6B-9E9D23FD76B1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scraper", "Scraper\Scraper.csproj", "{E02B4876-A72C-4E49-89A8-065AABB4C0E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scraper", "Scraper\Scraper.csproj", "{E02B4876-A72C-4E49-89A8-065AABB4C0E6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "TestConsole\TestConsole.csproj", "{791F435A-9EF0-449F-B48C-7E0C86163759}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{791F435A-9EF0-449F-B48C-7E0C86163759}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

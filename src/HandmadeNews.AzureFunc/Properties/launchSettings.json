@@ -1,8 +1,8 @@
 {
   "profiles": {
-    "HandmadeNews.AzureFunc": {
+    "HandmadeNews": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7296",
+      "commandLineArgs": "--port 7092",
       "launchBrowser": false
     }
   }
