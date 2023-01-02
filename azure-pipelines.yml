@@ -15,9 +15,8 @@ steps:
     dotnet build ./src --configuration Release
 - task: DotNetCoreCLI@2
   inputs:
-    workingDirectory: $(System.DefaultWorkingDirectory)/src
     command: publish
-    arguments: '--configuration Release --output publish_output'
+    arguments: './src --configuration Release --output publish_output'
     projects: '*.csproj'
     publishWebProjects: false
     modifyOutputPath: false
