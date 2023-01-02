@@ -12,7 +12,8 @@ pool:
 steps:
 - script: |
     dotnet restore
-    dotnet build --configuration Release
+
+    dotnet build --source ./src --configuration Release
 - task: DotNetCoreCLI@2
   inputs:
     workingDirectory: $(System.DefaultWorkingDirectory)/src
