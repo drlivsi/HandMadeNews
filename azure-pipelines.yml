@@ -12,7 +12,6 @@ pool:
 steps:
 - script: |
     dotnet restore
-
     dotnet build --source ./src --configuration Release
 - task: DotNetCoreCLI@2
   inputs:
