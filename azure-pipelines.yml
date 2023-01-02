@@ -16,8 +16,8 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: publish
-    arguments: './src --configuration Release --output publish_output'
-    projects: '*.csproj'
+    arguments: '--configuration Release --output publish_output'
+    projects: './src/HandmadeNews.AzureFunc/HandmadeNews.AzureFunc.csproj'
     publishWebProjects: false
     modifyOutputPath: false
     zipAfterPublish: false
