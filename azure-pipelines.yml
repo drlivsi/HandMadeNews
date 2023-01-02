@@ -1,0 +1,45 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: |
+    dotnet restore
+    dotnet build --configuration Release
+- task: DotNetCoreCLI@2
+  inputs:
+    workingDirectory: $(System.DefaultWorkingDirectory)/src
+    command: publish
+    arguments: '--configuration Release --output publish_output'
+    projects: '*.csproj'
+    publishWebProjects: false
+    modifyOutputPath: false
+    zipAfterPublish: false
+- task: ArchiveFiles@2
+  displayName: "Archive files"
+  inputs:    
+    rootFolderOrFile: "$(System.DefaultWorkingDirectory)/src/publish_output"
+    includeRootFolder: false
+    archiveFile: "$(System.ArtifactStagingDirectory)/build$(Build.BuildId).zip"
+    replaceExistingArchive: true
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(System.ArtifactStagingDirectory)/build$(Build.BuildId).zip'
+    artifactName: 'drop'
+- task: AzureFunctionApp@1
+  inputs:
+    azureSubscription: 'Visual Studio Professional с подпиской MSDN (d71c15e8-53dd-4dd8-995b-60a731dc2b1c)'
+    appType: 'functionAppLinux'
+    appName: 'handmadenews'
+    deployToSlotOrASE: true
+    resourceGroupName: 'DefaultResourceGroup-WEU'
+    slotName: 'production'
+    package: '$(System.ArtifactStagingDirectory)/build$(Build.BuildId).zip'
+    runtimeStack: 'DOTNET|6.0'
