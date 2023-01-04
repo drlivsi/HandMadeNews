@@ -1,12 +1,10 @@
-﻿using Scraper;
-
-namespace TestConsole
+﻿namespace TestConsole
 {
     internal class Program
     {
         static async Task Main(string[] args)
         {
-            await new BaseScraper().SendToTelegram();
+            // await new BaseScraper().SendToTelegram();
         }
     }
 }
