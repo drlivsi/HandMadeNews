@@ -1,16 +1,13 @@
 ﻿using HamdmadeNews.Infrastructure;
 using HamdmadeNews.Infrastructure.Data;
-using HamdmadeNews.Infrastructure.Parsers;
+using HamdmadeNews.Infrastructure.Options;
+using HamdmadeNews.Infrastructure.Parsers.Producers;
 using HamdmadeNews.Infrastructure.Scrapers;
 using HandmadeNews.AzureFunc.Extensions;
-using HandmadeNews.AzureFunc.Options;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
-using System;
-using System.Xml.Linq;
 
 [assembly: FunctionsStartup(typeof(HandmadeNews.AzureFunc.Startap))]
 
@@ -20,8 +17,15 @@ namespace HandmadeNews.AzureFunc
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
+            var configuration = BuildConfiguration(builder.GetContext().ApplicationRootPath);
+
+            builder.Services.Configure<TelegramOptions>(configuration.GetSection("TelegramOptions"));
+
+            builder.Services.AddAppConfiguration(configuration);
+
             // builder.Services.AddHttpClient();            
-            var connectionString = "server=168.119.169.136;uid=kr_hmnews_user;pwd=ypigQoS3TO;database=kr_hmnews";
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
+
             builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseMySQL(connectionString));
             builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -35,12 +39,13 @@ namespace HandmadeNews.AzureFunc
                 .AddScoped<BucillaParser>()
                 .AddScoped<IParser, BucillaParser>(s => s.GetService<BucillaParser>());
 
+            builder.Services
+                .AddScoped<KoolerdesignParser>()
+                .AddScoped<IParser, KoolerdesignParser>(s => s.GetService<KoolerdesignParser>());
+
             builder.Services.AddScoped<IScrapperService, ScrapperService>();
 
             //builder.Services.AddSingleton<ILoggerProvider, MyLoggerProvider>();
-
-            var configuration = BuildConfiguration(builder.GetContext().ApplicationRootPath);
-            builder.Services.AddAppConfiguration(configuration);
         }
 
         private IConfiguration BuildConfiguration(string applicationRootPath)
@@ -52,6 +57,7 @@ namespace HandmadeNews.AzureFunc
                     .AddJsonFile("settings.json", optional: true, reloadOnChange: true)
                     .AddEnvironmentVariables()
                     .Build();
+
 
             return config;
         }

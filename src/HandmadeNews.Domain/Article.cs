@@ -3,6 +3,7 @@
     public class Article
     {
         public int Id { get; set; }
+        public DateTime? CreatedAt { get; set; }
         public string Code { get; set; }
         public Producers Producer { get; set; }
         public string Title { get; set; }
@@ -25,5 +26,6 @@
         Unknown,
         Lanarte,
         Bucilla,
+        KoolerDesign
     }
 }

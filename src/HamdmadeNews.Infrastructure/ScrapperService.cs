@@ -13,20 +13,27 @@ using HamdmadeNews.Infrastructure.Scrapers;
 using Microsoft.Extensions.Options;
 using HandmadeNews.AzureFunc.Options;
 using Microsoft.Extensions.DependencyInjection;
-using HamdmadeNews.Infrastructure.Parsers;
+using HamdmadeNews.Infrastructure.Parsers.Producers;
+using HamdmadeNews.Infrastructure.Options;
 
 namespace HamdmadeNews.Infrastructure
 {
     public class ScrapperService : IScrapperService
     {        
         private readonly IOptions<ProducersOptions> _producersOptions;
+        private readonly IOptions<TelegramOptions> _telegramOptions;
         private readonly IServiceProvider _serviceProvider;
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IUnitOfWork _unitOfWork;        
 
-        public ScrapperService(IServiceProvider serviceProvider, IUnitOfWork unitOfWork, IOptions<ProducersOptions> producersOptions)
+        public ScrapperService(
+            IServiceProvider serviceProvider, 
+            IUnitOfWork unitOfWork, 
+            IOptions<TelegramOptions> telegramOptions, 
+            IOptions<ProducersOptions> producersOptions)
         {         
             _serviceProvider = serviceProvider;
             _unitOfWork = unitOfWork;
+            _telegramOptions = telegramOptions;
             _producersOptions = producersOptions;
         }
 
@@ -34,11 +41,14 @@ namespace HamdmadeNews.Infrastructure
         {
             var tasks = new List<Task<List<Article>>>();            
 
-            var lanarteParser = (IParser)_serviceProvider.GetRequiredService(typeof(LanarteParser));
-            tasks.Add(lanarteParser.Parse(_producersOptions.Value.LanarteUrl));
+            //var lanarteParser = (IParser)_serviceProvider.GetRequiredService(typeof(LanarteParser));
+            //tasks.Add(lanarteParser.Parse(_producersOptions.Value.LanarteUrl));
 
-            var bucillaParser = (IParser)_serviceProvider.GetRequiredService(typeof(BucillaParser));
-            tasks.Add(bucillaParser.Parse(_producersOptions.Value.BucillaUrl));
+            //var bucillaParser = (IParser)_serviceProvider.GetRequiredService(typeof(BucillaParser));
+            //tasks.Add(bucillaParser.Parse(_producersOptions.Value.BucillaUrl));
+
+            var koolerdesignParser = (IParser)_serviceProvider.GetRequiredService(typeof(KoolerdesignParser));
+            tasks.Add(koolerdesignParser.Parse(_producersOptions.Value.KoolerDesignUrl));
 
             await Task.WhenAll(tasks);          
 
@@ -57,9 +67,9 @@ namespace HamdmadeNews.Infrastructure
 
         public async Task SendToTelegram()
         {
-            string apiToken = "5933325897:AAF0Q79hZp457OEeDKuQpp89bBdRC_zKDAA";
-            string chatIdRu = "-1001682303552";
-            string chatIdUa = "-1001890605319";
+            string apiToken = _telegramOptions.Value.ApiKey;
+            string chatIdRu = _telegramOptions.Value.ChatIdRu;
+            string chatIdUa = _telegramOptions.Value.ChatIdUa;
 
             var botClient = new TelegramBotClient(apiToken);
 

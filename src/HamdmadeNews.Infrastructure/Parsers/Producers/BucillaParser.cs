@@ -4,7 +4,7 @@ using System.Text;
 using System;
 using System.Web;
 
-namespace HamdmadeNews.Infrastructure.Parsers
+namespace HamdmadeNews.Infrastructure.Parsers.Producers
 {
     public class BucillaParser : BaseParser
     {
@@ -21,7 +21,7 @@ namespace HamdmadeNews.Infrastructure.Parsers
             {
                 var article = new Article()
                 {
-                    Producer = Producers.Bucilla
+                    Producer = HandmadeNews.Domain.Producers.Bucilla
                 };
 
                 var a = item.Descendants("a").FirstOrDefault(m => string.IsNullOrEmpty(m.GetAttributeValue("tile-link", "")));
@@ -29,8 +29,8 @@ namespace HamdmadeNews.Infrastructure.Parsers
 
                 article.Title = HttpUtility.HtmlDecode(a.GetAttributeValue("title", "").Replace("Bucilla &#174; ", string.Empty));
                 article.Url = "https://plaidonline.com" + a.GetAttributeValue("href", "");
-                article.Code = article.Url.Split("-").Last();         
-                
+                article.Code = article.Url.Split("-").Last();
+
                 var image = item.Descendants("img").FirstOrDefault();
                 article.Img = "https://plaidonline.com" + image.GetAttributeValue("src", "");
 
@@ -38,6 +38,6 @@ namespace HamdmadeNews.Infrastructure.Parsers
             }
 
             return articles;
-        }        
+        }
     }
 }

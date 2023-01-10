@@ -10,5 +10,6 @@ namespace HandmadeNews.AzureFunc.Options
     {
         public string LanarteUrl { get; set; }
         public string BucillaUrl { get; set; }
+        public string KoolerDesignUrl { get; set; }
     }
 }

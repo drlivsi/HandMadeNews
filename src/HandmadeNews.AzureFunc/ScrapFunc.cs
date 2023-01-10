@@ -24,8 +24,8 @@ namespace HandmadeNews.AzureFunc
             _scrapperService = scrapperService;
         }
 
-        [FunctionName("ScrapManually")]
-        public async Task<IActionResult> Run(
+        [FunctionName("Scrap")]
+        public async Task<IActionResult> Scrap(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req)
         {
             _logger.LogInformation("C# HTTP trigger function processed a request.");
@@ -38,8 +38,8 @@ namespace HandmadeNews.AzureFunc
             return new OkObjectResult(responseMessage);
         }
 
-        [FunctionName("ScrapTimer")]
-        public async Task Run2([TimerTrigger("0 0 9 * * *")] TimerInfo myTimer, ILogger log)
+        [FunctionName("ScrapByTimer")]
+        public async Task ScrapByTimer([TimerTrigger("0 0 9 * * *")] TimerInfo myTimer, ILogger log)
         {
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
             await _scrapperService.DoScrap();
