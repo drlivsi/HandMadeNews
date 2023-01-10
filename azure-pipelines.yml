@@ -39,6 +39,6 @@ steps:
     appName: 'handmadenews'
     deployToSlotOrASE: true
     resourceGroupName: 'DefaultResourceGroup-WEU'
-    slotName: 'production'
+    slotName: 'dev1'
     package: '$(System.ArtifactStagingDirectory)/build$(Build.BuildId).zip'
     runtimeStack: 'DOTNET|6.0'
