@@ -41,11 +41,11 @@ namespace HamdmadeNews.Infrastructure
         {
             var tasks = new List<Task<List<Article>>>();            
 
-            //var lanarteParser = (IParser)_serviceProvider.GetRequiredService(typeof(LanarteParser));
-            //tasks.Add(lanarteParser.Parse(_producersOptions.Value.LanarteUrl));
+            var lanarteParser = (IParser)_serviceProvider.GetRequiredService(typeof(LanarteParser));
+            tasks.Add(lanarteParser.Parse(_producersOptions.Value.LanarteUrl));
 
-            //var bucillaParser = (IParser)_serviceProvider.GetRequiredService(typeof(BucillaParser));
-            //tasks.Add(bucillaParser.Parse(_producersOptions.Value.BucillaUrl));
+            var bucillaParser = (IParser)_serviceProvider.GetRequiredService(typeof(BucillaParser));
+            tasks.Add(bucillaParser.Parse(_producersOptions.Value.BucillaUrl));
 
             var koolerdesignParser = (IParser)_serviceProvider.GetRequiredService(typeof(KoolerdesignParser));
             tasks.Add(koolerdesignParser.Parse(_producersOptions.Value.KoolerDesignUrl));
