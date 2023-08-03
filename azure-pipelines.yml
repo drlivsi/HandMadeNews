@@ -38,7 +38,7 @@ steps:
     appType: 'functionAppLinux'
     appName: 'handmadenews'
     deployToSlotOrASE: true
-    resourceGroupName: 'DefaultResourceGroup-WEU'
+    resourceGroupName: 'HandMadeNewsResourceGroup'
     slotName: 'dev1'
     package: '$(System.ArtifactStagingDirectory)/build$(Build.BuildId).zip'
     runtimeStack: 'DOTNET|6.0'
