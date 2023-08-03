@@ -1,4 +1,4 @@
-﻿using HandmadeNews.Domain;
+﻿using HandmadeNews.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace HamdmadeNews.Infrastructure.Data
@@ -11,11 +11,5 @@ namespace HamdmadeNews.Infrastructure.Data
         }
 
         public DbSet<Article> Articles { get; set; }
-
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<Article>().ToTable("Articles");
-        //    base.OnModelCreating(modelBuilder);
-        //}
     }
 }

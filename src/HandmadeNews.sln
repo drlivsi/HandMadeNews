@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33006.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "TestConsole\TestConsole.csproj", "{791F435A-9EF0-449F-B48C-7E0C86163759}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandmadeNews.Domain", "HandmadeNews.Domain\HandmadeNews.Domain.csproj", "{897AFD47-665B-47E2-87E2-1AF1206B655E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandmadeNews.Domain", "HandmadeNews.Domain\HandmadeNews.Domain.csproj", "{897AFD47-665B-47E2-87E2-1AF1206B655E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HamdmadeNews.Infrastructure", "HamdmadeNews.Infrastructure\HamdmadeNews.Infrastructure.csproj", "{44E272BF-58A8-4653-8625-DA4A62EA5BCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamdmadeNews.Infrastructure", "HamdmadeNews.Infrastructure\HamdmadeNews.Infrastructure.csproj", "{44E272BF-58A8-4653-8625-DA4A62EA5BCD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandmadeNews.AzureFunc", "HandmadeNews.AzureFunc\HandmadeNews.AzureFunc.csproj", "{2DA083D6-2502-4700-9DF7-78ED6C5EA18B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandmadeNews.AzureFunc", "HandmadeNews.AzureFunc\HandmadeNews.AzureFunc.csproj", "{2DA083D6-2502-4700-9DF7-78ED6C5EA18B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{791F435A-9EF0-449F-B48C-7E0C86163759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{791F435A-9EF0-449F-B48C-7E0C86163759}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{791F435A-9EF0-449F-B48C-7E0C86163759}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{791F435A-9EF0-449F-B48C-7E0C86163759}.Release|Any CPU.Build.0 = Release|Any CPU
 		{897AFD47-665B-47E2-87E2-1AF1206B655E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{897AFD47-665B-47E2-87E2-1AF1206B655E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{897AFD47-665B-47E2-87E2-1AF1206B655E}.Release|Any CPU.ActiveCfg = Release|Any CPU

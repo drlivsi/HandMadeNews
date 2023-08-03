@@ -1,8 +1,10 @@
-﻿namespace HandmadeNews.Domain
+﻿using HandmadeNews.Domain.Enums;
+using HandmadeNews.Domain.SeedWork;
+
+namespace HandmadeNews.Domain.Entities
 {
-    public class Article
+    public class Article : Entity
     {
-        public int Id { get; set; }
         public DateTime? CreatedAt { get; set; }
         public string Code { get; set; }
         public Producers Producer { get; set; }
@@ -12,20 +14,5 @@
         public ArticleStatus Status { get; set; }
         public bool TelegramRu { get; set; }
         public bool TelegramUa { get; set; }
-    }
-
-    public enum ArticleStatus
-    {
-        New,
-        Approved,
-        Rejected
-    }
-
-    public enum Producers
-    {        
-        Unknown,
-        Lanarte,
-        Bucilla,
-        KoolerDesign
     }
 }

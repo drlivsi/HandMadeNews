@@ -1,68 +1,78 @@
-﻿using HandmadeNews.Domain;
-using HtmlAgilityPack;
-using Telegram.Bot;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using Telegram.Bot.Types.Enums;
-using HamdmadeNews.Infrastructure.Scrapers;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using HandmadeNews.AzureFunc.Options;
-using Microsoft.Extensions.DependencyInjection;
-using HamdmadeNews.Infrastructure.Parsers.Producers;
 using HamdmadeNews.Infrastructure.Options;
+using HamdmadeNews.Infrastructure.Parsing;
+using HamdmadeNews.Infrastructure.Parsing.Strategies;
+using Telegram.Bot;
+using Telegram.Bot.Types.Enums;
+using HandmadeNews.Domain.Entities;
+using HandmadeNews.Domain.Enums;
+using HandmadeNews.Domain.SeedWork;
 
-namespace HamdmadeNews.Infrastructure
+namespace HamdmadeNews.Infrastructure.Services
 {
     public class ScrapperService : IScrapperService
-    {        
+    {
         private readonly IOptions<ProducersOptions> _producersOptions;
         private readonly IOptions<TelegramOptions> _telegramOptions;
         private readonly IServiceProvider _serviceProvider;
-        private readonly IUnitOfWork _unitOfWork;        
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IParser _parser;
+        private readonly HttpClient _httpClient;
 
         public ScrapperService(
-            IServiceProvider serviceProvider, 
-            IUnitOfWork unitOfWork, 
-            IOptions<TelegramOptions> telegramOptions, 
+            IServiceProvider serviceProvider,
+            IUnitOfWork unitOfWork,
+            IParser parser,
+            HttpClient httpClient,
+            IOptions<TelegramOptions> telegramOptions,
             IOptions<ProducersOptions> producersOptions)
-        {         
+        {
             _serviceProvider = serviceProvider;
             _unitOfWork = unitOfWork;
+            _parser = parser;
+            _httpClient = httpClient;
             _telegramOptions = telegramOptions;
             _producersOptions = producersOptions;
         }
 
         public async Task DoScrap()
         {
-            var tasks = new List<Task<List<Article>>>();            
+            // Download html pages in parallel
+            var tasks = new List<Task<(Type parserType, string html, string domain)>>();
+            tasks.Add(DownloadHtml(typeof(LanarteParsingStrategy), _producersOptions.Value.LanarteUrl));
+            tasks.Add(DownloadHtml(typeof(BucillaParsingStrategy), _producersOptions.Value.BucillaUrl));
+            tasks.Add(DownloadHtml(typeof(KoolerdesignParsingStrategy), _producersOptions.Value.KoolerDesignUrl));
+            var taskResults = await Task.WhenAll(tasks);
 
-            var lanarteParser = (IParser)_serviceProvider.GetRequiredService(typeof(LanarteParser));
-            tasks.Add(lanarteParser.Parse(_producersOptions.Value.LanarteUrl));
-
-            var bucillaParser = (IParser)_serviceProvider.GetRequiredService(typeof(BucillaParser));
-            tasks.Add(bucillaParser.Parse(_producersOptions.Value.BucillaUrl));
-
-            var koolerdesignParser = (IParser)_serviceProvider.GetRequiredService(typeof(KoolerdesignParser));
-            tasks.Add(koolerdesignParser.Parse(_producersOptions.Value.KoolerDesignUrl));
-
-            await Task.WhenAll(tasks);          
-
-            foreach(var task in tasks)
+            // Process each html
+            foreach (var taskResult in taskResults)
             {
-                task.Result.ForEach(async x =>
+                // Switch parsing strategy on the fly
+                var strategy = (IParsingStrategy)_serviceProvider.GetRequiredService(taskResult.parserType);
+                var articles = _parser.Process(strategy, taskResult.html, taskResult.domain);
+
+                // add article to the database if not exists
+                foreach (var article in articles)
                 {
-                    var existingArticle = await GetArticle(x.Producer, x.Code);
+                    var existingArticle = await GetArticle(article.Producer, article.Code);
                     if (existingArticle == null)
                     {
-                        await AddArticle(x);
-                    }                        
-                });
+                        await _unitOfWork.ArticlesRepository.Add(article);
+                    }
+                }
             }
+
+            _unitOfWork.Save();
+        }
+
+        private async Task<(Type parsingStrategy, string html, string domain)> DownloadHtml(Type parserType, string url)
+        {
+            var html = await _httpClient.GetStringAsync(url);
+            var uri = new Uri(url);
+            var domain = uri.Scheme + "://" + uri.Host;
+            return (parserType, html, domain);
         }
 
         public async Task SendToTelegram()
@@ -80,7 +90,7 @@ namespace HamdmadeNews.Infrastructure
             foreach (var article in articles)
             {
                 if (!article.TelegramRu)
-                { 
+                {
                     await botClient.SendPhotoAsync(
                         chatId: chatIdRu,
                         photo: article.Img,
@@ -105,6 +115,7 @@ namespace HamdmadeNews.Infrastructure
                     processed++;
                 }
 
+                // Send tomorrow
                 if (processed >= 20)
                     break;
             };

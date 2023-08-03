@@ -1,6 +1,6 @@
-﻿using HandmadeNews.Domain;
+﻿using HandmadeNews.Domain.Entities;
 
-namespace HamdmadeNews.Infrastructure
+namespace HandmadeNews.Domain.SeedWork
 {
     public interface IUnitOfWork : IDisposable
     {

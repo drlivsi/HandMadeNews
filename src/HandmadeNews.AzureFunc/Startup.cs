@@ -1,9 +1,12 @@
 ﻿using HamdmadeNews.Infrastructure;
 using HamdmadeNews.Infrastructure.Data;
 using HamdmadeNews.Infrastructure.Options;
-using HamdmadeNews.Infrastructure.Parsers.Producers;
-using HamdmadeNews.Infrastructure.Scrapers;
+using HamdmadeNews.Infrastructure.Parsing;
+using HamdmadeNews.Infrastructure.Parsing.Strategies;
+using HamdmadeNews.Infrastructure.Repositories;
+using HamdmadeNews.Infrastructure.Services;
 using HandmadeNews.AzureFunc.Extensions;
+using HandmadeNews.Domain.SeedWork;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -22,8 +25,8 @@ namespace HandmadeNews.AzureFunc
             builder.Services.Configure<TelegramOptions>(configuration.GetSection("TelegramOptions"));
 
             builder.Services.AddAppConfiguration(configuration);
-
-            // builder.Services.AddHttpClient();            
+            
+            builder.Services.AddHttpClient();            
             var connectionString = configuration.GetConnectionString("DefaultConnection");
 
             builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseMySQL(connectionString));
@@ -31,21 +34,21 @@ namespace HandmadeNews.AzureFunc
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             
 
-            builder.Services
-                .AddScoped<LanarteParser>()
-                .AddScoped<IParser, LanarteParser>(s => s.GetService<LanarteParser>());
+            builder.Services.AddScoped<IParser, Parser>();
 
             builder.Services
-                .AddScoped<BucillaParser>()
-                .AddScoped<IParser, BucillaParser>(s => s.GetService<BucillaParser>());
+                .AddScoped<LanarteParsingStrategy>()
+                .AddScoped<IParsingStrategy, LanarteParsingStrategy>(s => s.GetService<LanarteParsingStrategy>());
 
             builder.Services
-                .AddScoped<KoolerdesignParser>()
-                .AddScoped<IParser, KoolerdesignParser>(s => s.GetService<KoolerdesignParser>());
+                .AddScoped<BucillaParsingStrategy>()
+                .AddScoped<IParsingStrategy, BucillaParsingStrategy>(s => s.GetService<BucillaParsingStrategy>());
+
+            builder.Services
+                .AddScoped<KoolerdesignParsingStrategy>()
+                .AddScoped<IParsingStrategy, KoolerdesignParsingStrategy>(s => s.GetService<KoolerdesignParsingStrategy>());
 
             builder.Services.AddScoped<IScrapperService, ScrapperService>();
-
-            //builder.Services.AddSingleton<ILoggerProvider, MyLoggerProvider>();
         }
 
         private IConfiguration BuildConfiguration(string applicationRootPath)

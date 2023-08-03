@@ -1,11 +1,10 @@
 ﻿using System.Linq.Expressions;
 
-namespace HamdmadeNews.Infrastructure
+namespace HandmadeNews.Domain.SeedWork
 {
     public interface IGenericRepository<T> : IDisposable where T : class
     {
         Task<IEnumerable<T>> FindBy(Expression<Func<T, bool>> predicate);
-        // Task<PaginatedList<T>> FindBy(Expression<Func<T, bool>> predicate, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy, int pageIndex, int pageSize);
         Task Add(T entity);
         void Update(T entity);
         void Delete(T entity);

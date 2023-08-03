@@ -1,10 +1,9 @@
-﻿using HamdmadeNews.Infrastructure.Data;
+﻿using System.Linq.Expressions;
+using HamdmadeNews.Infrastructure.Data;
+using HandmadeNews.Domain.SeedWork;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Linq;
-using System.Linq.Expressions;
 
-namespace HamdmadeNews.Infrastructure
+namespace HamdmadeNews.Infrastructure.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
@@ -21,14 +20,6 @@ namespace HamdmadeNews.Infrastructure
         {
             return await Context.Set<T>().Where(predicate).ToListAsync();
         }
-
-        //public async Task<PaginatedList<T>> FindBy(Expression<Func<T, bool>> predicate, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy, int pageIndex, int pageSize)
-        //{
-        //    var query = Context.Set<T>().Where(predicate);
-        //    query = orderBy(query);
-
-        //    return await PaginatedList<T>.CreateAsync(query, pageIndex, pageSize);
-        //}
 
         public async Task Add(T entity)
         {
