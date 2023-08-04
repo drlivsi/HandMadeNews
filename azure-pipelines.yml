@@ -11,8 +11,8 @@ pool:
 
 steps:
 - script: |
-    dotnet restore ./src
-    dotnet build ./src --configuration Release
+    dotnet restore ./src/HandmadeNews.sln
+    dotnet build ./src/HandmadeNews.sln --configuration Release
 - task: DotNetCoreCLI@2
   inputs:
     command: publish
