@@ -1,16 +1,30 @@
 <h1 align="center" id="title">-- HandMadeNews --</h1>
 
-<p align="center"><img src="https://forumsmile.net/u/f/8/7/f87c2aeb7c529b31fda475bc6b3bfa63.jpg" alt="project-image"></p>
+<p align="center"><img src="https://forumsmile.net/u/f/8/7/f87c2aeb7c529b31fda475bc6b3bfa63.jpg" alt="project-image" height="200" ></p>
 
-<p align="center" id="description">Needlework News Parser for Telegram Channels</p>
+<p align="center" id="description">Needlework News Parser</p>
+
+<h2>Description</h2>
+
+<p>I have a lot of pet-projects, with varying degrees of success/profitability. All of them are in private repositories. I do not develop this project further, but it still works. So I decided to make the repository public.</p> 
+
+<p>The project HandMadeNews is a web parser for embroidery manufacturers. As soon as the manufacturer releases something new, my service writes it to the database and sends it to 2 telegram channels (in Ukrainian and Russian). The service sends exactly the same information to both channels, but it is always possible to manually add ads to the desired channel.</p> 
 
 <h2>🚀 Demo</h2>
 
-[https://t.me/handmade\_news\_ua](https://t.me/handmade_news_ua) and [https://t.me/handmade\_news\_ru](https://t.me/handmade_news_ru)
+[https://t.me/handmade\_news\_ua](https://t.me/handmade_news_ua) and [https://t.me/handmade\_news\_ru](https://t.me/handmade_news)
+
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   Azure Functions
+*   MySQL
+*   .NET 6
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://s3.moifotki.org/5c806a3751724151a0f17d525a11b20b.png" alt="project-screenshot" width="540" height="121/">
+<img src="https://s3.moifotki.org/5c806a3751724151a0f17d525a11b20b.png" alt="project-screenshot" width="540" height="121" />
 
 <h2>🛠️ How to run on local machine:</h2>
 
@@ -84,10 +98,4 @@ As a result, our parser will grab information from 3 websites and save it to the
 <p>Azure Function is deploying using Azure DevOps, you can find the pipeline here https://github.com/drlivsi/HandMadeNews/blob/main/azure-pipelines.yml</p>
 <p>On Azure Portal, you need to create all environment variables from local.settings.json and specify the correct database connection string (I use Hetzner Cloud, but you can create the database on Azure).</p>
 
-<h2>💻 Built with</h2>
 
-Technologies used in the project:
-
-*   Azure Functions
-*   MySQL
-*   .NET 6
