@@ -6,13 +6,18 @@
 
 <h2>Description</h2>
 
-<p>I have a lot of pet-projects, with varying degrees of success/profitability. All of them are in private repositories. I do not develop this project further, but it still works. So I decided to make the repository public.</p> 
+<p>The project HandMadeNews is a web parser for embroidery manufacturers. As soon as the manufacturer releases something new, service writes this information to the database and sends it sends to 2 telegram channels in different languages. The service sends exactly the same information to both channels, but it is always possible to manually add ads to the desired channel :)</p>
 
-<p>The project HandMadeNews is a web parser for embroidery manufacturers. As soon as the manufacturer releases something new, my service writes it to the database and sends it to 2 telegram channels (in Ukrainian and Russian). The service sends exactly the same information to both channels, but it is always possible to manually add ads to the desired channel.</p> 
+<p>It looks like this: </p>
+
+- Periodically checking specific URLs
+- Saving information about new products to the database
+- Sending news to the Telegram channel
 
 <h2>🚀 Demo</h2>
 
-[https://t.me/handmade\_news\_ua](https://t.me/handmade_news_ua) and [https://t.me/handmade\_news\_ru](https://t.me/handmade_news)
+[https://t.me/handmade\_news\_ua](https://t.me/handmade_news_ua) <br>
+[https://t.me/handmade\_news\_ru](https://t.me/handmade_news)
 
 <h2>💻 Built with</h2>
 
@@ -24,13 +29,18 @@ Technologies used in the project:
 
 <h2>Project Screenshots:</h2>
 
+<p>List of Telegram channels:</p>
 <img src="https://s3.moifotki.org/5c806a3751724151a0f17d525a11b20b.png" alt="project-screenshot" width="540" height="121" />
 
-<h2>🛠️ How to run on local machine:</h2>
+<p>An example of information that is sent to the telegram channel:</p>
+<img src="https://s3.moifotki.org/a87af8c07fc341f4b40becaa2241e3f9.jpg" alt="project-screenshot" height="700" />
 
-<p>1. Clone or download repository</p>
 
-<p>2. Create file src\HandmadeNews.AzureFunc\local.settings.json</p>
+<h2>🛠️ Run on local machine:</h2>
+
+<h3>1. Clone or download repository</h3>
+
+<h3>2. Create file src\HandmadeNews.AzureFunc\local.settings.json</h3>
 
 ```
  {
@@ -57,11 +67,10 @@ Technologies used in the project:
 }
 ```
 Note:
-* Both connection strings are the same, they differ only by the server
-* Sending images to Telegram is disabled by default. To enable it, you need to specify the Telegram ApiKey and create 2 Telegram groups
+* Both connection strings differ only by the server (we need 127.0.0.1 for applying design time EF-migrations)
+* Sending images to Telegram is disabled by default. To enable it, you need to specify the Telegram ApiKey and manually create 2 Telegram channels
 
-
-<p>3. Create file src\.env</p>
+<h3>3. Create file src\.env</h3>
 
 ```
 MYSQL_ROOT_PASSWORD=my_root_password
@@ -70,32 +79,30 @@ MYSQL_USER=my_user
 MYSQL_PASSWORD=my_password
 ```
 
-Note:
-* You need this file only for running on a local machine
+You need this file only for running on a local machine using docker-compose
 
-<p>3. Run docker-compose </p>  
+<h3>3. Run docker-compose </h3>  
 
 ```
 docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
 ```
+At the moment we have an empty database, in the next step we will create tables.
 
-<p>4. Run Entity Framework migration script</p>
+<h3>4. Run Entity Framework migration script</h3>
 
 ```
 dotnet ef database update --project HandmadeNews.Infrastructure --startup-project Handmadenews.AzureFunc  
 ```
 
-<p>5. And the latest step - run Azure Function :)</p>
+<h3>5. And the latest step - run Azure Function :)</h3>
 
 ```
 http://localhost:34895/api/Scrap
 ```
 
-As a result, our parser will grab information from 3 websites and save it to the database. Optionally, images will be sent to Telegram channels.
+As a result, HandmadeNews parser will grab information from 3 websites and save it to the database. Optionally, images will be sent to both Telegram channels.
 
 <h2>🛠️ How to run on Dev/Prod environments</h2>
-<p></p>As I mentioned before, docker-compose and .env file are only needed for debugging on the local machine.</p>
+<p></p>docker-compose and .env file are only needed for debugging on the local machine.</p>
 <p>Azure Function is deploying using Azure DevOps, you can find the pipeline here https://github.com/drlivsi/HandMadeNews/blob/main/azure-pipelines.yml</p>
 <p>On Azure Portal, you need to create all environment variables from local.settings.json and specify the correct database connection string (I use Hetzner Cloud, but you can create the database on Azure).</p>
-
-
