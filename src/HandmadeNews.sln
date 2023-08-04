@@ -5,9 +5,11 @@ VisualStudioVersion = 17.4.33006.217
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandmadeNews.Domain", "HandmadeNews.Domain\HandmadeNews.Domain.csproj", "{897AFD47-665B-47E2-87E2-1AF1206B655E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HamdmadeNews.Infrastructure", "HamdmadeNews.Infrastructure\HamdmadeNews.Infrastructure.csproj", "{44E272BF-58A8-4653-8625-DA4A62EA5BCD}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandmadeNews.AzureFunc", "HandmadeNews.AzureFunc\HandmadeNews.AzureFunc.csproj", "{2DA083D6-2502-4700-9DF7-78ED6C5EA18B}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6C27D449-5E29-476F-8F47-556ABAA35ABC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandmadeNews.Infrastructure", "HandmadeNews.Infrastructure\HandmadeNews.Infrastructure.csproj", "{B9BAAA17-C0B6-4F19-B598-10171DA16E43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +21,18 @@ Global
 		{897AFD47-665B-47E2-87E2-1AF1206B655E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{897AFD47-665B-47E2-87E2-1AF1206B655E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{897AFD47-665B-47E2-87E2-1AF1206B655E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{44E272BF-58A8-4653-8625-DA4A62EA5BCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44E272BF-58A8-4653-8625-DA4A62EA5BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44E272BF-58A8-4653-8625-DA4A62EA5BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44E272BF-58A8-4653-8625-DA4A62EA5BCD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2DA083D6-2502-4700-9DF7-78ED6C5EA18B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2DA083D6-2502-4700-9DF7-78ED6C5EA18B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DA083D6-2502-4700-9DF7-78ED6C5EA18B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DA083D6-2502-4700-9DF7-78ED6C5EA18B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C27D449-5E29-476F-8F47-556ABAA35ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C27D449-5E29-476F-8F47-556ABAA35ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C27D449-5E29-476F-8F47-556ABAA35ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C27D449-5E29-476F-8F47-556ABAA35ABC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9BAAA17-C0B6-4F19-B598-10171DA16E43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9BAAA17-C0B6-4F19-B598-10171DA16E43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9BAAA17-C0B6-4F19-B598-10171DA16E43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9BAAA17-C0B6-4F19-B598-10171DA16E43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

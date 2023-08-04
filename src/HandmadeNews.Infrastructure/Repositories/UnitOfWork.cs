@@ -1,8 +1,9 @@
-﻿using HamdmadeNews.Infrastructure.Data;
+﻿using HandmadeNews.Infrastructure.Data;
 using HandmadeNews.Domain.Entities;
 using HandmadeNews.Domain.SeedWork;
+using HandmadeNews.Infrastructure.Data;
 
-namespace HamdmadeNews.Infrastructure.Repositories
+namespace HandmadeNews.Infrastructure.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {

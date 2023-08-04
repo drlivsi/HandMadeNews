@@ -3,7 +3,7 @@ using HandmadeNews.Domain.Enums;
 using HtmlAgilityPack;
 using System.Web;
 
-namespace HamdmadeNews.Infrastructure.Parsing.Strategies
+namespace HandmadeNews.Infrastructure.Parsing.Strategies
 {
     public class BucillaParsingStrategy : IParsingStrategy
     {

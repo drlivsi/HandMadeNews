@@ -2,7 +2,7 @@
 using HandmadeNews.Domain.Enums;
 using HtmlAgilityPack;
 
-namespace HamdmadeNews.Infrastructure.Parsing.Strategies
+namespace HandmadeNews.Infrastructure.Parsing.Strategies
 {
     public class LanarteParsingStrategy : IParsingStrategy
     {

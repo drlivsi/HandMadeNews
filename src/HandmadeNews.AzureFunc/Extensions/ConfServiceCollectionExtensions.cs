@@ -1,15 +1,11 @@
-﻿using HandmadeNews.AzureFunc.Options;
+﻿using System;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using HandmadeNews.Infrastructure.Options;
 
 namespace HandmadeNews.AzureFunc.Extensions
 {
-    internal static class ConfigurationServiceCollectionExtensions
+    internal static class ConfServiceCollectionExtensions
     {
         public static IServiceCollection AddAppConfiguration(this IServiceCollection services, IConfiguration config)
         {

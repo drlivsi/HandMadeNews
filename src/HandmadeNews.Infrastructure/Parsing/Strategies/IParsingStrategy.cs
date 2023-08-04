@@ -1,6 +1,6 @@
 ﻿using HandmadeNews.Domain.Entities;
 
-namespace HamdmadeNews.Infrastructure.Parsing.Strategies
+namespace HandmadeNews.Infrastructure.Parsing.Strategies
 {
     public interface IParsingStrategy
     {

@@ -2,8 +2,13 @@
   "profiles": {
     "HandmadeNews.AzureFunc": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7147",
-      "launchBrowser": false
+      "commandLineArgs": "--port 7147"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 34895,
+      "useSSL": false
     }
   }
 }

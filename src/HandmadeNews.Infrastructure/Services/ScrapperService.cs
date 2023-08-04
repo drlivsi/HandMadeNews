@@ -1,27 +1,29 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using HandmadeNews.AzureFunc.Options;
-using HamdmadeNews.Infrastructure.Options;
-using HamdmadeNews.Infrastructure.Parsing;
-using HamdmadeNews.Infrastructure.Parsing.Strategies;
 using Telegram.Bot;
 using Telegram.Bot.Types.Enums;
+using HandmadeNews.Infrastructure.Options;
+using HandmadeNews.Infrastructure.Parsing;
+using HandmadeNews.Infrastructure.Parsing.Strategies;
 using HandmadeNews.Domain.Entities;
 using HandmadeNews.Domain.Enums;
 using HandmadeNews.Domain.SeedWork;
+using Microsoft.Extensions.Logging;
 
-namespace HamdmadeNews.Infrastructure.Services
+namespace HandmadeNews.Infrastructure.Services
 {
     public class ScrapperService : IScrapperService
     {
         private readonly IOptions<ProducersOptions> _producersOptions;
         private readonly IOptions<TelegramOptions> _telegramOptions;
+        private readonly ILogger<ScrapperService> _logger;
         private readonly IServiceProvider _serviceProvider;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IParser _parser;
         private readonly HttpClient _httpClient;
 
         public ScrapperService(
+            ILogger<ScrapperService> logger,
             IServiceProvider serviceProvider,
             IUnitOfWork unitOfWork,
             IParser parser,
@@ -29,6 +31,7 @@ namespace HamdmadeNews.Infrastructure.Services
             IOptions<TelegramOptions> telegramOptions,
             IOptions<ProducersOptions> producersOptions)
         {
+            _logger = logger;
             _serviceProvider = serviceProvider;
             _unitOfWork = unitOfWork;
             _parser = parser;
@@ -44,11 +47,41 @@ namespace HamdmadeNews.Infrastructure.Services
             tasks.Add(DownloadHtml(typeof(LanarteParsingStrategy), _producersOptions.Value.LanarteUrl));
             tasks.Add(DownloadHtml(typeof(BucillaParsingStrategy), _producersOptions.Value.BucillaUrl));
             tasks.Add(DownloadHtml(typeof(KoolerdesignParsingStrategy), _producersOptions.Value.KoolerDesignUrl));
-            var taskResults = await Task.WhenAll(tasks);
+
+            var aggregateTask = Task.WhenAll(tasks);
+
+            (Type parserType, string html, string domain)[] allResults = null;
+
+            try
+            {
+                allResults = await aggregateTask;
+            }
+            catch (Exception ex)
+            {
+                if (aggregateTask.Exception != null && aggregateTask.Exception.InnerExceptions.Any())
+                {
+                    foreach (var innerException in aggregateTask.Exception.InnerExceptions)
+                    {
+                        _logger.LogError(innerException, "Something is wrong");
+                    }
+                }
+                else
+                {
+                    _logger.LogError(ex, ex.Message);
+                }
+            }
+
+            if (allResults == null)
+            {
+                return;
+            }
 
             // Process each html
-            foreach (var taskResult in taskResults)
+            foreach (var taskResult in allResults)
             {
+                if (string.IsNullOrEmpty(taskResult.html))
+                    continue;
+
                 // Switch parsing strategy on the fly
                 var strategy = (IParsingStrategy)_serviceProvider.GetRequiredService(taskResult.parserType);
                 var articles = _parser.Process(strategy, taskResult.html, taskResult.domain);
@@ -62,24 +95,38 @@ namespace HamdmadeNews.Infrastructure.Services
                         await _unitOfWork.ArticlesRepository.Add(article);
                     }
                 }
-            }
 
-            _unitOfWork.Save();
+                _unitOfWork.Save();
+            }
         }
+
 
         private async Task<(Type parsingStrategy, string html, string domain)> DownloadHtml(Type parserType, string url)
         {
-            var html = await _httpClient.GetStringAsync(url);
             var uri = new Uri(url);
             var domain = uri.Scheme + "://" + uri.Host;
+            string html = string.Empty;
+
+            try
+            { 
+                html = await _httpClient.GetStringAsync(url);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"An attempt to download html failed: parserType={parserType},url={url} ");
+            }
+
             return (parserType, html, domain);
         }
 
         public async Task SendToTelegram()
         {
-            string apiToken = _telegramOptions.Value.ApiKey;
-            string chatIdRu = _telegramOptions.Value.ChatIdRu;
-            string chatIdUa = _telegramOptions.Value.ChatIdUa;
+            if(!_telegramOptions.Value.Enabled)
+                return;
+
+            var apiToken = _telegramOptions.Value.ApiKey;
+            var chatIdRu = _telegramOptions.Value.ChatIdRu;
+            var chatIdUa = _telegramOptions.Value.ChatIdUa;
 
             var botClient = new TelegramBotClient(apiToken);
 
@@ -89,6 +136,8 @@ namespace HamdmadeNews.Infrastructure.Services
 
             foreach (var article in articles)
             {
+                // I prefer to send images one by one
+
                 if (!article.TelegramRu)
                 {
                     await botClient.SendPhotoAsync(
@@ -115,7 +164,7 @@ namespace HamdmadeNews.Infrastructure.Services
                     processed++;
                 }
 
-                // Send tomorrow
+                // Send other images tomorrow
                 if (processed >= 20)
                     break;
             };

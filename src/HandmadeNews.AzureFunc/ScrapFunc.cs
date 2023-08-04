@@ -5,7 +5,7 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using HamdmadeNews.Infrastructure.Services;
+using HandmadeNews.Infrastructure.Services;
 
 namespace HandmadeNews.AzureFunc
 {

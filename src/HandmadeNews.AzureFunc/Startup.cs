@@ -1,16 +1,22 @@
-﻿using HamdmadeNews.Infrastructure;
-using HamdmadeNews.Infrastructure.Data;
-using HamdmadeNews.Infrastructure.Options;
-using HamdmadeNews.Infrastructure.Parsing;
-using HamdmadeNews.Infrastructure.Parsing.Strategies;
-using HamdmadeNews.Infrastructure.Repositories;
-using HamdmadeNews.Infrastructure.Services;
+﻿using Google.Protobuf.WellKnownTypes;
+using HandmadeNews.Infrastructure;
+using HandmadeNews.Infrastructure.Data;
+using HandmadeNews.Infrastructure.Options;
+using HandmadeNews.Infrastructure.Parsing;
+using HandmadeNews.Infrastructure.Parsing.Strategies;
+using HandmadeNews.Infrastructure.Repositories;
+using HandmadeNews.Infrastructure.Services;
 using HandmadeNews.AzureFunc.Extensions;
 using HandmadeNews.Domain.SeedWork;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Linq;
+using HandmadeNews.Infrastructure.Data;
+using static System.Formats.Asn1.AsnWriter;
 
 [assembly: FunctionsStartup(typeof(HandmadeNews.AzureFunc.Startap))]
 
@@ -32,7 +38,6 @@ namespace HandmadeNews.AzureFunc
             builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseMySQL(connectionString));
             builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-            
 
             builder.Services.AddScoped<IParser, Parser>();
 

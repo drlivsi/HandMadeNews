@@ -1,7 +1,7 @@
-﻿using HamdmadeNews.Infrastructure.Parsing.Strategies;
+﻿using HandmadeNews.Infrastructure.Parsing.Strategies;
 using HandmadeNews.Domain.Entities;
 
-namespace HamdmadeNews.Infrastructure.Parsing;
+namespace HandmadeNews.Infrastructure.Parsing;
 
 public interface IParser
 {

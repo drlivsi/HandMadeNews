@@ -1,7 +1,7 @@
 ﻿using HandmadeNews.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace HamdmadeNews.Infrastructure.Data
+namespace HandmadeNews.Infrastructure.Data
 {
     public class ApplicationDbContext : DbContext
     {

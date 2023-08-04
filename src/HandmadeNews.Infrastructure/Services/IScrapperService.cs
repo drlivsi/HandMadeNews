@@ -1,4 +1,4 @@
-﻿namespace HamdmadeNews.Infrastructure.Services
+﻿namespace HandmadeNews.Infrastructure.Services
 {
     public interface IScrapperService
     {

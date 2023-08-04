@@ -1,9 +1,10 @@
 ﻿using System.Linq.Expressions;
-using HamdmadeNews.Infrastructure.Data;
+using HandmadeNews.Infrastructure.Data;
 using HandmadeNews.Domain.SeedWork;
+using HandmadeNews.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace HamdmadeNews.Infrastructure.Repositories
+namespace HandmadeNews.Infrastructure.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
