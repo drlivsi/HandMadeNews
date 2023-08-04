@@ -43,10 +43,12 @@ namespace HandmadeNews.Infrastructure.Services
         public async Task DoScrap()
         {
             // Download html pages in parallel
-            var tasks = new List<Task<(Type parserType, string html, string domain)>>();
-            tasks.Add(DownloadHtml(typeof(LanarteParsingStrategy), _producersOptions.Value.LanarteUrl));
-            tasks.Add(DownloadHtml(typeof(BucillaParsingStrategy), _producersOptions.Value.BucillaUrl));
-            tasks.Add(DownloadHtml(typeof(KoolerdesignParsingStrategy), _producersOptions.Value.KoolerDesignUrl));
+            var tasks = new List<Task<(Type parserType, string html, string domain)>>
+            {
+                DownloadHtml(typeof(LanarteParsingStrategy), _producersOptions.Value.LanarteUrl),
+                DownloadHtml(typeof(BucillaParsingStrategy), _producersOptions.Value.BucillaUrl),
+                DownloadHtml(typeof(KoolerdesignParsingStrategy), _producersOptions.Value.KoolerDesignUrl)
+            };
 
             var aggregateTask = Task.WhenAll(tasks);
 
@@ -67,7 +69,7 @@ namespace HandmadeNews.Infrastructure.Services
                 }
                 else
                 {
-                    _logger.LogError(ex, ex.Message);
+                    _logger.LogError(ex, "Something is wrong");
                 }
             }
 
@@ -147,7 +149,6 @@ namespace HandmadeNews.Infrastructure.Services
                         parseMode: ParseMode.Html);
 
                     article.TelegramRu = true;
-                    UpdateArticle(article);
                     processed++;
                 }
 
@@ -160,7 +161,6 @@ namespace HandmadeNews.Infrastructure.Services
                         parseMode: ParseMode.Html);
 
                     article.TelegramUa = true;
-                    UpdateArticle(article);
                     processed++;
                 }
 
