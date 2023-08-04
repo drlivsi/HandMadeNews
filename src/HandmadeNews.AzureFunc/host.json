@@ -1,14 +1,14 @@
 {
     "version": "2.0",
-    "logging": {
-      "applicationInsights": {
-        "samplingSettings": {
-          "isEnabled": true,
-          "excludedTypes": "Request"
-        },
-        "logLevel": {          
-          "Default": "Information"
-        }
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
       }
+    },
+    "logLevel": {
+      "HandmadeNews.AzureFunc": "Information"
     }
+  }
 }
