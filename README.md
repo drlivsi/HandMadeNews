@@ -39,9 +39,9 @@ Technologies used in the project:
 
 <h2>🛠️ Run on local machine:</h2>
 
-<h3>1. Clone or download repository</h3>
+**1. Clone or download repository**
 
-<h3>2. Create file src\HandmadeNews.AzureFunc\local.settings.json</h3>
+**2. Create file src\HandmadeNews.AzureFunc\local.settings.json**
 
 ```
  {
@@ -72,7 +72,7 @@ Note:
 - Both connection strings differ only by the server (we need 127.0.0.1 for applying EF-migrations)
 - Sending images to Telegram is disabled by default. To enable it, you need to specify the Telegram ApiKey and manually create 2 Telegram channels
 
-<h3>3. Create file src\.env</h3>
+**3. Create file src\.env**
 
 ```
 MYSQL_ROOT_PASSWORD=my_root_password
@@ -83,20 +83,20 @@ MYSQL_PASSWORD=my_password
 
 You need this file only for running on a local machine using docker-compose
 
-<h3>4. Run docker-compose </h3>  
+**4. Run docker-compose**
 
 ```
 docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
 ```
 At the moment we have an empty database, in the next step we will create tables.
 
-<h3>5. Run Entity Framework migration script</h3>
+**5. Run Entity Framework migration script**
 
 ```
 dotnet ef database update --project HandmadeNews.Infrastructure --startup-project Handmadenews.AzureFunc  
 ```
 
-<h3>6. And the latest step - run Azure Function :)</h3>
+**6. And the latest step - run Azure Function :)**
 
 ```
 http://localhost:34895/api/Parse
