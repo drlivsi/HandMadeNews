@@ -1,12 +1,12 @@
-<h1 align="center" id="title">-- HandMadeNews --</h1>
+<h1 align="center" id="title">HandMadeNews</h1>
 
-<p align="center"><img src="https://forumsmile.net/u/f/8/7/f87c2aeb7c529b31fda475bc6b3bfa63.jpg" alt="project-image" height="200" ></p>
+<p align="center"><img src="/res/sheep.jpg" alt="project-image" height="200" ></p>
 
 <p align="center" id="description">Needlework News Parser</p>
 
 <h2>Description</h2>
 
-<p>The project HandMadeNews is a web parser for embroidery manufacturers. As soon as the manufacturer releases something new, service writes this information to the database and sends it sends to 2 telegram channels in different languages. The service sends exactly the same information to both channels, but it is always possible to manually add ads to the desired channel :)</p>
+<p>HandMadeNews is a web parser for embroidery manufacturers. As soon as the manufacturer releases something new, the service writes this information to the database and sends it to 2 telegram channels in different languages. The service sends exactly the same information to both channels, but it is always possible to manually add ads to the desired channel :)</p>
 
 <p>It looks like this: </p>
 
@@ -30,11 +30,12 @@ Technologies used in the project:
 <h2>Project Screenshots:</h2>
 
 <p>List of Telegram channels:</p>
-<img src="https://s3.moifotki.org/5c806a3751724151a0f17d525a11b20b.png" alt="project-screenshot" width="540" height="121" />
+<img src="/res/channels-list.png" alt="project-screenshot" width="540" height="121" />
 
-<p>An example of information that is sent to the telegram channel:</p>
-<img src="https://s3.moifotki.org/a87af8c07fc341f4b40becaa2241e3f9.jpg" alt="project-screenshot" height="700" />
+<p>An example of information sent to a telegram channel:</p>
+<img src="/res/channels-content.jpg" alt="project-screenshot" height="700" />
 
+<p>Channel subscribers can go to the manufacturer's website and buy an embroidery kit.</p>
 
 <h2>🛠️ Run on local machine:</h2>
 
@@ -60,14 +61,14 @@ Technologies used in the project:
   },
   "TelegramOptions": {
     "Enabled": false,
-    "ApiKey": "*****",
-    "ChatIdRu": -****,
-    "ChatIdUa": -****
+    "ApiKey": "<YOUR API KEY>",
+    "ChatIdRu": -<First Channel Id>,
+    "ChatIdUa": -<Second Channel Id>
   }
 }
 ```
 Note:
-* Both connection strings differ only by the server (we need 127.0.0.1 for applying design time EF-migrations)
+* Both connection strings differ only by the server (we need 127.0.0.1 for applying EF-migrations)
 * Sending images to Telegram is disabled by default. To enable it, you need to specify the Telegram ApiKey and manually create 2 Telegram channels
 
 <h3>3. Create file src\.env</h3>
@@ -100,9 +101,17 @@ dotnet ef database update --project HandmadeNews.Infrastructure --startup-projec
 http://localhost:34895/api/Scrap
 ```
 
-As a result, HandmadeNews parser will grab information from 3 websites and save it to the database. Optionally, images will be sent to both Telegram channels.
+As a result, the HandmadeNews parser will grab information from 3 websites and save it to the database. Information can be sent to Telegram channels.
 
-<h2>🛠️ How to run on Dev/Prod environments</h2>
-<p></p>docker-compose and .env file are only needed for debugging on the local machine.</p>
+<h2>🛠️ Run on Dev/Prod environments</h2>
+<p></p>docker-compose and .env files are only needed for debugging on the local machine.</p>
 <p>Azure Function is deploying using Azure DevOps, you can find the pipeline here https://github.com/drlivsi/HandMadeNews/blob/main/azure-pipelines.yml</p>
 <p>On Azure Portal, you need to create all environment variables from local.settings.json and specify the correct database connection string (I use Hetzner Cloud, but you can create the database on Azure).</p>
+
+<h2>🛠️ How to add a new website for parsing?</h2>
+
+- Modify producer options in file src\HandmadeNews.AzureFunc\local.settings.json
+- Add new Parsing Strategy https://github.com/drlivsi/HandMadeNews/tree/main/src/HandmadeNews.Infrastructure/Parsing/Strategies
+  
+<br>
+<p align="center"><img src="/res/StandWithUkraine.jpg" /></p>
