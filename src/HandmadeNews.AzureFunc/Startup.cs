@@ -53,7 +53,7 @@ namespace HandmadeNews.AzureFunc
                 .AddScoped<KoolerdesignParsingStrategy>()
                 .AddScoped<IParsingStrategy, KoolerdesignParsingStrategy>(s => s.GetService<KoolerdesignParsingStrategy>());
 
-            builder.Services.AddScoped<IScrapperService, ScrapperService>();
+            builder.Services.AddScoped<IParsingService, ParsingService>();
         }
 
         private IConfiguration BuildConfiguration(string applicationRootPath)

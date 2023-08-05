@@ -12,18 +12,18 @@ using Microsoft.Extensions.Logging;
 
 namespace HandmadeNews.Infrastructure.Services
 {
-    public class ScrapperService : IScrapperService
+    public class ParsingService : IParsingService
     {
         private readonly IOptions<ProducersOptions> _producersOptions;
         private readonly IOptions<TelegramOptions> _telegramOptions;
-        private readonly ILogger<ScrapperService> _logger;
+        private readonly ILogger<ParsingService> _logger;
         private readonly IServiceProvider _serviceProvider;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IParser _parser;
         private readonly HttpClient _httpClient;
 
-        public ScrapperService(
-            ILogger<ScrapperService> logger,
+        public ParsingService(
+            ILogger<ParsingService> logger,
             IServiceProvider serviceProvider,
             IUnitOfWork unitOfWork,
             IParser parser,
@@ -40,7 +40,7 @@ namespace HandmadeNews.Infrastructure.Services
             _producersOptions = producersOptions;
         }
 
-        public async Task DoScrap()
+        public async Task Parse()
         {
             // Download html pages in parallel
             var tasks = new List<Task<(Type parserType, string html, string domain)>>

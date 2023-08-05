@@ -99,7 +99,7 @@ dotnet ef database update --project HandmadeNews.Infrastructure --startup-projec
 <h3>6. And the latest step - run Azure Function :)</h3>
 
 ```
-http://localhost:34895/api/Scrap
+http://localhost:34895/api/Parse
 ```
 
 As a result, the HandmadeNews parser will grab information from 3 websites and save it to the database. Information can be sent to Telegram channels.

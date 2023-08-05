@@ -1,8 +1,8 @@
 ﻿namespace HandmadeNews.Infrastructure.Services
 {
-    public interface IScrapperService
+    public interface IParsingService
     {
-        Task DoScrap();
+        Task Parse();
         Task SendToTelegram();
     }
 }
