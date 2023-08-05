@@ -1,11 +1,13 @@
 version: '3.4'
 
 services:
-  handmadenews.azurefunc:
+  azurefunc:
     image: ${DOCKER_REGISTRY-}handmadenewsazurefunc
     build:
       context: .
       dockerfile: HandmadeNews.AzureFunc/Dockerfile
+    ports:
+      - "34895:34895"
     depends_on:
         - db 
   db:

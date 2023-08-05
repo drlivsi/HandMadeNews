@@ -1,6 +1,6 @@
 version: '3.4'
 
 services:
-  handmadenews.azurefunc:
+  azurefunc:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development

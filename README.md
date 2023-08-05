@@ -82,20 +82,20 @@ MYSQL_PASSWORD=my_password
 
 You need this file only for running on a local machine using docker-compose
 
-<h3>3. Run docker-compose </h3>  
+<h3>4. Run docker-compose </h3>  
 
 ```
 docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
 ```
 At the moment we have an empty database, in the next step we will create tables.
 
-<h3>4. Run Entity Framework migration script</h3>
+<h3>5. Run Entity Framework migration script</h3>
 
 ```
 dotnet ef database update --project HandmadeNews.Infrastructure --startup-project Handmadenews.AzureFunc  
 ```
 
-<h3>5. And the latest step - run Azure Function :)</h3>
+<h3>6. And the latest step - run Azure Function :)</h3>
 
 ```
 http://localhost:34895/api/Scrap
