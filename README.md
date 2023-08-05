@@ -67,9 +67,10 @@ Technologies used in the project:
   }
 }
 ```
+
 Note:
-* Both connection strings differ only by the server (we need 127.0.0.1 for applying EF-migrations)
-* Sending images to Telegram is disabled by default. To enable it, you need to specify the Telegram ApiKey and manually create 2 Telegram channels
+- Both connection strings differ only by the server (we need 127.0.0.1 for applying EF-migrations)
+- Sending images to Telegram is disabled by default. To enable it, you need to specify the Telegram ApiKey and manually create 2 Telegram channels
 
 <h3>3. Create file src\.env</h3>
 
@@ -110,7 +111,7 @@ As a result, the HandmadeNews parser will grab information from 3 websites and s
 
 <h2>🛠️ How to add a new website for parsing?</h2>
 
-- Modify producer options in file src\HandmadeNews.AzureFunc\local.settings.json
+- Modify ProducersOptions in file src\HandmadeNews.AzureFunc\local.settings.json
 - Add new Parsing Strategy https://github.com/drlivsi/HandMadeNews/tree/main/src/HandmadeNews.Infrastructure/Parsing/Strategies
   
 <br>
