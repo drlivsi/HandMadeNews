@@ -1,6 +1,4 @@
-﻿using Google.Protobuf.WellKnownTypes;
-using HandmadeNews.Infrastructure;
-using HandmadeNews.Infrastructure.Data;
+﻿using HandmadeNews.Infrastructure.Data;
 using HandmadeNews.Infrastructure.Options;
 using HandmadeNews.Infrastructure.Parsing;
 using HandmadeNews.Infrastructure.Parsing.Strategies;
@@ -8,32 +6,33 @@ using HandmadeNews.Infrastructure.Repositories;
 using HandmadeNews.Infrastructure.Services;
 using HandmadeNews.AzureFunc.Extensions;
 using HandmadeNews.Domain.SeedWork;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Linq;
-using HandmadeNews.Infrastructure.Data;
-using static System.Formats.Asn1.AsnWriter;
+using Microsoft.Azure.WebJobs.Host.Bindings;
+using Microsoft.Extensions.Options;
 
-[assembly: FunctionsStartup(typeof(HandmadeNews.AzureFunc.Startap))]
+[assembly: FunctionsStartup(typeof(HandmadeNews.AzureFunc.Startup))]
 
 namespace HandmadeNews.AzureFunc
 {
-    public class Startap : FunctionsStartup
+    public class Startup : FunctionsStartup
     {
+        public IConfiguration Configuration { get; private set; }
+
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            var configuration = BuildConfiguration(builder.GetContext().ApplicationRootPath);
+            InitializeConfiguration(builder);
 
-            builder.Services.Configure<TelegramOptions>(configuration.GetSection("TelegramOptions"));
+            //var configuration = BuildConfiguration(builder.GetContext().ApplicationRootPath);
 
-            builder.Services.AddAppConfiguration(configuration);
+            builder.Services.Configure<TelegramOptions>(Configuration.GetSection("TelegramOptions"));
+
+            builder.Services.AddAppConfiguration(Configuration);
             
             builder.Services.AddHttpClient();            
-            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            var connectionString = Configuration.GetConnectionString("DefaultConnection");
 
             builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseMySQL(connectionString));
             builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
@@ -56,18 +55,34 @@ namespace HandmadeNews.AzureFunc
             builder.Services.AddScoped<IParsingService, ParsingService>();
         }
 
-        private IConfiguration BuildConfiguration(string applicationRootPath)
+        private void InitializeConfiguration(IFunctionsHostBuilder builder)
         {
-            var config =
-                new ConfigurationBuilder()
-                    .SetBasePath(applicationRootPath)
-                    .AddJsonFile("local.settings.json", optional: true, reloadOnChange: true)
-                    .AddJsonFile("settings.json", optional: true, reloadOnChange: true)
-                    .AddEnvironmentVariables()
-                    .Build();
+            var executionContextOptions = builder
+                .Services
+                .BuildServiceProvider()
+                .GetService<IOptions<ExecutionContextOptions>>()
+                .Value;
 
-
-            return config;
+            Configuration = new ConfigurationBuilder()
+                .SetBasePath(executionContextOptions.AppDirectory)
+                .AddJsonFile("local.settings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile("settings.json", optional: true, reloadOnChange: true)
+                .AddEnvironmentVariables()
+                .Build();
         }
+
+        //private IConfiguration BuildConfiguration(string applicationRootPath)
+        //{
+        //    var config =
+        //        new ConfigurationBuilder()
+        //            .SetBasePath(applicationRootPath)
+        //            .AddJsonFile("local.settings.json", optional: true, reloadOnChange: true)
+        //            .AddJsonFile("settings.json", optional: true, reloadOnChange: true)
+        //            .AddEnvironmentVariables()
+        //            .Build();
+
+
+        //    return config;
+        //}
     }
 }

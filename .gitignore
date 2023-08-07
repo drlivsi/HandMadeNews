@@ -350,3 +350,4 @@ MigrationBackup/
 .ionide/
 src/data/
 src/.env
+src/HandmadeNews.IntegrationTests/local.settings.json

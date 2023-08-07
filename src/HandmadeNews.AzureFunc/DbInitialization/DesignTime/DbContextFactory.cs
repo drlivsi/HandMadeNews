@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using HandmadeNews.Infrastructure.Data;
 
-namespace HandmadeNews.AzureFunc.DesignTime
+namespace HandmadeNews.AzureFunc.DbInitialization.DesignTime
 {
     // Required for applying design time EF migrations 
     public class DbContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
@@ -19,7 +19,7 @@ namespace HandmadeNews.AzureFunc.DesignTime
 
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
 
-            optionsBuilder.UseMySQL(configuration.GetConnectionString("MigrationsConnection"));
+            optionsBuilder.UseMySQL(configuration.GetConnectionString("DefaultConnection"));
 
             return new ApplicationDbContext(optionsBuilder.Options);
         }

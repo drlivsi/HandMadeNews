@@ -1,0 +1,15 @@
+﻿version: '3.4'
+
+services:
+  dbtest:
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: my_root_password
+      MYSQL_DATABASE: my_database_test
+      MYSQL_USER: my_user
+      MYSQL_PASSWORD: my_password
+      MYSQL_TCP_PORT: 3306
+    ports:
+      - "3306:3306"

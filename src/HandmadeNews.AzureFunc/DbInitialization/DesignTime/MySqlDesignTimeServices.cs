@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using MySql.EntityFrameworkCore.Extensions;
 
-namespace HandmadeNews.AzureFunc.DesignTime
+namespace HandmadeNews.AzureFunc.DbInitialization.DesignTime
 {
     // Required for applying design time EF migrations and must be located in startup project
     // https://bugs.mysql.com/bug.php?id=106592

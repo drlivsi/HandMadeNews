@@ -1,0 +1,8 @@
+﻿{
+  "TestSettings": {
+    "MySqlUser": "my_user",
+    "MySqlPassword": "my_password",
+    "MySqlDatabase": "my_database_test",
+    "MySqlPortAndProto": "3306/tcp"
+  }
+}
