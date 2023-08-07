@@ -51,8 +51,7 @@ Technologies used in the project:
     "FUNCTIONS_WORKER_RUNTIME": "dotnet"
   },
   "ConnectionStrings": {
-    "DefaultConnection": "server=db;uid=my_user;pwd=my_password;database=my_database",
-    "MigrationsConnection": "server=127.0.0.1;uid=my_user;pwd=my_password;database=my_database"
+    "DefaultConnection": "server=db;uid=my_user;pwd=my_password;database=my_database"    
   },
   "ProducersOptions": {
     "LanarteUrl": "https://webshop.verachtert.be/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&count=13&viewMode=list",
@@ -68,9 +67,7 @@ Technologies used in the project:
 }
 ```
 
-Note:
-- Both connection strings differ only by the server (we need 127.0.0.1 for applying EF-migrations)
-- Sending images to Telegram is disabled by default. To enable it, you need to specify the Telegram ApiKey and manually create 2 Telegram channels
+Note: Sending images to Telegram is disabled by default. To enable it, you need to specify the Telegram ApiKey and manually create 2 Telegram channels
 
 **3. Create file src\.env**
 
@@ -90,13 +87,8 @@ docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
 ```
 At the moment we have an empty database, in the next step we will create tables.
 
-**5. Run Entity Framework migration script**
 
-```
-dotnet ef database update --project HandmadeNews.Infrastructure --startup-project Handmadenews.AzureFunc  
-```
-
-**6. And the latest step - run Azure Function :)**
+**5. Run Azure Function :)**
 
 ```
 http://localhost:34895/api/Parse
@@ -104,15 +96,25 @@ http://localhost:34895/api/Parse
 
 As a result, the HandmadeNews parser will grab information from 3 websites and save it to the database. Information can be sent to Telegram channels.
 
+
 <h2>🛠️ Run on Dev/Prod environments</h2>
 <p></p>docker-compose and .env files are only needed for debugging on the local machine.</p>
 <p>Azure Function is deploying using Azure DevOps, you can find the pipeline here https://github.com/drlivsi/HandMadeNews/blob/main/azure-pipelines.yml</p>
 <p>On Azure Portal, you need to create all environment variables from local.settings.json and specify the correct database connection string (I use Hetzner Cloud, but you can create the database on Azure).</p>
 
+
 <h2>🛠️ How to add a new website for parsing?</h2>
 
 - Modify ProducersOptions in file src\HandmadeNews.AzureFunc\local.settings.json
 - Add new Parsing Strategy https://github.com/drlivsi/HandMadeNews/tree/main/src/HandmadeNews.Infrastructure/Parsing/Strategies
+
+
+<h2>🛠️ Run Integration Tests</h2>
+Copy file src\HandmadeNews.AzureFunc\local.settings.json to src\HandmadeNews.IntegrationTests\local.settings.json and modify DefaultConnection:
+
+```
+    "DefaultConnection": "server=127.0.0.1;uid=my_user;pwd=my_password;database=my_database_test"
+```
   
 <br>
 <p align="center"><img src="/res/StandWithUkraine.jpg" /></p>
