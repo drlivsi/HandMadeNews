@@ -351,3 +351,4 @@ MigrationBackup/
 src/data/
 src/.env
 src/HandmadeNews.IntegrationTests/local.settings.json
+src/HandmadeNews.UnitTests/local.settings.json
