@@ -20,7 +20,6 @@ namespace HandmadeNews.UnitTests
         private readonly IServiceProvider _serviceProvider;
         private readonly IUnitOfWork _unitOfWork = Substitute.For<IUnitOfWork>();
         private readonly IParser _parser = new Parser();
-        private IParsingService _sut;
 
         public ParsingServiceTests(UnitTestsBase unitTestsBase)
         {
@@ -36,11 +35,11 @@ namespace HandmadeNews.UnitTests
             var producers = new Dictionary<Type, string> { { strategy, url } };
             var html = await File.ReadAllTextAsync(resourcesPath);
             var httpClient = Substitute.For<HttpClient>(new MockHttpMessageHandler(html, HttpStatusCode.OK));
-            _sut = new ParsingService(_logger, telegramOptions, _serviceProvider, _unitOfWork, _parser, httpClient);
+            var sut = new ParsingService(_logger, telegramOptions, _serviceProvider, _unitOfWork, _parser, httpClient);
 
             // Act
-            var downloadedHtmlList = await _sut.DownloadAsync(producers);
-            var parsedArticles = _sut.Parse(downloadedHtmlList);
+            var downloadedHtmlList = await sut.DownloadAsync(producers);
+            var parsedArticles = sut.Parse(downloadedHtmlList);
 
             // Assert
             downloadedHtmlList.Should().NotBeNull().And.HaveCount(1);

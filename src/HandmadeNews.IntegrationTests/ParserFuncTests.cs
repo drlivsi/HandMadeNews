@@ -11,7 +11,7 @@ namespace HandmadeNews.IntegrationTests
     [Collection(TestsCollection.Name)]
     public class ParserFuncTests : IClassFixture<IntegrationTestBase>
     {
-        readonly ParserFunc _sut;
+        private readonly ParserFunc _sut;
 
         public ParserFuncTests(IntegrationTestBase fixture)
         {
