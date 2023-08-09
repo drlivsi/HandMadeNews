@@ -1,11 +1,10 @@
-﻿using System;
-using HandmadeNews.AzureFunc;
+﻿using HandmadeNews.AzureFunc;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Azure.WebJobs.Host.Bindings;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace HandmadeNews.IntegrationTests.Infrastructure
+namespace HandmadeNews.IntegrationTests.Fixture
 {
     public class TestHost
     {

@@ -1,0 +1,1957 @@
+﻿
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9"><![endif]-->
+<!--[if IE 10]><html class="no-js ie10"><![endif]-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <title>LanArte - Embroidery kits | Verachtert Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="" />
+    <meta name="robots" content="noindex,follow" />
+    <meta name="generator" content="Sana Commerce" />
+
+
+    <link href="/content/css/store?v=IjQmjLKTdXuIVGRajxBssG673LvjAerJIGgdCf4wwxM1&t=Default" rel="stylesheet" />
+
+    <link href="/content/css/extra/theme.css?v=638083494580000000" type="text/css" rel="stylesheet" />
+
+
+
+
+    <link rel="icon" href="/content/files/images/verachtert_group-kleiner.jpg">
+
+
+    <style type="text/css">
+        .colored-header-desktop {
+            background-color: #eb5511;
+        }
+    </style>
+
+
+
+    <link rel="stylesheet" type="text/css" href="/content/files/css/menufix.css">
+</head>
+<body class="productlist-list-page" data-url-root="/" data-url-home="/en-us/">
+
+
+
+
+    <div class="site">
+        <noscript>
+            <style type="text/css">
+                html.no-js {
+                    visibility: visible;
+                }
+            </style>
+            <div class="msg-block no-script">
+                For full functionality of this site it is necessary to enable JavaScript.<br /> Here are the <a href="http://www.enable-javascript.com/" target="_blank"><br /> instructions how to enable JavaScript in your web browser</a>.
+            </div>
+        </noscript>
+
+
+        <header class="nav-is-closed">
+            <div class="header-blocks-wrapper">
+                <div class="top-header">
+                    <div class="top-info font-smaller">
+                        Any questions? Call 0032(0) 14 58 01 11 -&nbsp;<a target="_blank" href="mailto:info@verachtert.be">info@verachtert.be</a><br>
+                    </div>
+
+                    <div class="top-action">
+
+
+                        <div class="top-dropdown language">
+                            <div class="opener collapsed">
+                                <img src="/content/files/images/languages/1033.gif" title="English" alt="English" class="flag" /><span class="selected-language">Language: English</span>
+                            </div>
+                            <div class="summary">
+                                <a href="/en-us/" class="hyp"><img src="/content/files/images/languages/1033.gif" class="flag" />English</a><a href="/fr-be/" class="hyp"><img src="/content/files/images/languages/2060.gif" class="flag" />Fran&#231;ais (Belgique)</a><a href="/nl-be/" class="hyp"><img src="/content/files/images/languages/2067.gif" class="flag" />Nederlands (Belgi&#235;)</a>
+                            </div>
+                        </div>
+
+
+                        <a href="/en-us/service" class="top-hyp font-smaller">Customer service</a>
+
+
+                        <a href="/en-us/profile/login" class="top-hyp font-smaller">Login</a>
+                        <div class="top-dropdown login">
+                            <div class="opener collapsed">
+                                <span class="login-title">Account</span>
+                            </div>
+                            <div class="summary">
+                                <a href="/en-us/profile/login" class="hyp">Login</a>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="middle-header">
+
+                    <div class="logo">
+                        <a href="/en-us/">
+                            <img src="/content/files/images/quickindex/Verachtert_logo%20klein.jpg" alt="" />
+                        </a>
+                    </div>
+
+
+                    <div class="search">
+                        <div class="search-wrapper ui-front">
+                            <form action="/en-us/search" method="get">
+                                <div class="tbx tbx-main-search">
+                                    <input data-src="/en-us/productlist/searchsuggestions" id="searchbox" maxlength="50" name="q" placeholder="Product name or item number..." type="text" value="" />
+                                </div>
+                                <button class="btn no-caption btn-search" title="Search products" type="submit">
+                                    <span class="btn-cnt">Search</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div class="basket" data-src="/en-us/basket/summary">
+                    </div>
+
+                </div>
+                <div class="bottom-header">
+                    <div class="center">
+                        <div class="nav-opener-wrapper">
+                            <div class="nav-opener"></div>
+                        </div>
+
+                        <nav class="nav-main nav-type-multi clearfix">
+                            <ul class="nav-list nav-list-root">
+                                <li class="nav-item nav-item-root">
+                                    <a href="/en-us/home" class="hyp-top-lvl"
+                                       data-tracking-data="null">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item nav-item-root">
+                                    <a href="/en-us/catalog" class="hyp-top-lvl has-children"
+                                       data-tracking-data="null">
+                                        <span>Products</span>
+                                    </a>
+                                    <div class="nav-wrapper">
+                                        <ul class="nav-list nav-lvl-2">
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/mercerie/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Haberdashery
+                                                    </a>
+                                                    <ul class="nav-list nav-lvl-3">
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/mercerie/allesnaaigarens/" class="hyp arrow-grey">All Sewing Thread</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/mercerie/kunststof-ritsen/" class="hyp arrow-grey">Synthetic Zippers</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/mercerie/metaal-ritsen/" class="hyp arrow-grey">Metal Zippers</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/mercerie/naalden-spelden/" class="hyp arrow-grey">Needles and Pins</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/mercerie/scharen/" class="hyp arrow-grey">Scissors</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/mercerie/knopen-kledingsluitingen/" class="hyp arrow-grey">Buttons &amp; Closures</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/mercerie/mercerie-access/" class="hyp arrow-grey">Haberdashery Accessories</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/mercerie/elastieken/" class="hyp arrow-grey">Elastics</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/mercerie/band-en-kant/" class="hyp arrow-grey">Ribbons &amp; Lace</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/mercerie/vliezen/" class="hyp arrow-grey">Interfacing &amp; Wadding</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/mercerie/voeringstoffen/" class="hyp arrow-grey">Lining Fabrics</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/mercerie/verlichting-handwerkloepen/" class="hyp arrow-grey">Craft Lamps &amp; Magnifiers</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/mercerie/verf/" class="hyp arrow-grey">Dye</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/haberdashery/applications/" class="hyp arrow-grey">Applications</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/borduren-knoop/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Crafts
+                                                    </a>
+                                                    <ul class="nav-list nav-lvl-3">
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/borduren-knoop/handborduurgaren/" class="hyp arrow-grey">Embroidery Thread</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/borduren-knoop/machineborduurgaren/" class="hyp arrow-grey">Embroidery Yarn for Machine</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/borduren-knoop/borduuraccessoires/" class="hyp arrow-grey">Embrodery Accessories</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/borduren-knoop/borduurstof/" class="hyp arrow-grey">Fabrics</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/borduren-knoop/borduurklaar-pab/" class="hyp arrow-grey">Pre-Finished Kits</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/borduren-knoop/borduurpakketten/" class="hyp arrow-grey">Embroidery kits</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/vervaco/knoop/" class="hyp arrow-grey">Latch Hook Kits</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/breien-haken/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Knitting and Crochet
+                                                    </a>
+                                                    <ul class="nav-list nav-lvl-3">
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/breien-haken/brei-en-haaknaalden/" class="hyp arrow-grey">Knitting and Crocheting Needles</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/breien-haken/breigaren/" class="hyp arrow-grey">Knitting Yarn and Wool</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/breien-haken/haakgaren/" class="hyp arrow-grey">Crocheting Yarn</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/breien-haken/breien-en-haken-access/" class="hyp arrow-grey">Accessories</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/quilten-pw/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Quilt &amp; Patchwork
+                                                    </a>
+                                                    <ul class="nav-list nav-lvl-3">
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/quilten-pw/quilt-garens/" class="hyp arrow-grey">Quilting Threads</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/quilten-pw/quilt-pw-vliezen/" class="hyp arrow-grey">Interfacing</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/quilten-pw/quilt-stoffen/" class="hyp arrow-grey">Fabrics</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/quilten-pw/quilt-pw-access/" class="hyp arrow-grey">Accessories</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/naaien/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        All Sewing Thread
+                                                    </a>
+                                                    <ul class="nav-list nav-lvl-3">
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/naaien/naaipakketten/" class="hyp arrow-grey">All Sewing kits</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/naaien/accessoires/" class="hyp arrow-grey">Accessoires</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/naaien/stoffen/" class="hyp arrow-grey">Fabrics</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/naaien/marketing/" class="hyp arrow-grey">Marketing</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/naaien/patronen/" class="hyp arrow-grey">Patterns</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/booksandmagazines/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Books &amp; magazines
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/hobby-interfacing/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Hobby
+                                                    </a>
+                                                    <ul class="nav-list nav-lvl-3">
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/hobby-vliezen/knutselaccess/" class="hyp arrow-grey">Arts &amp; Crafts Accessories </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/hobby-vliezen/hobby-vliezen/" class="hyp arrow-grey">Hobby &amp; Hobby Interfacing</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/hobby-vliezen/hobbystoffen/" class="hyp arrow-grey">Hobby Fabrics</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/hobby-vliezen/kralen-en-parels/" class="hyp arrow-grey">Beads and Pearls</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/hobby-vliezen/vilten/" class="hyp arrow-grey">Felts</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/mercerie/naalden-spelden/assortimenten/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Assortments
+                                                    </a>
+                                                    <ul class="nav-list nav-lvl-3">
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/assortiments/haberdashery/" class="hyp arrow-grey">Haberdashery</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/assortiments/fabrics/" class="hyp arrow-grey">Fabrics</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/assortments/embroiderykits/" class="hyp arrow-grey">Embroidery kits</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/winkelsupport/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Store Equipment
+                                                    </a>
+                                                    <ul class="nav-list nav-lvl-3">
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/winkelsupport/marketing/" class="hyp arrow-grey">Marketing</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/curtain-accessories/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Curtains, Blinds &amp; Accessories
+                                                    </a>
+                                                    <ul class="nav-list nav-lvl-3">
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/raamdeco/gordijnaccessoires/" class="hyp arrow-grey">Curtain Accessories</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/fashion/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Fashion
+                                                    </a>
+                                                    <ul class="nav-list nav-lvl-3">
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/fashion/panty-s/" class="hyp arrow-grey">Panty&#39;s</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="/en-us/fashion/sokken/" class="hyp arrow-grey">Socks &amp; Legwear</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-item-root">
+                                    <a href="/en-us/alaville/" class="hyp-top-lvl has-children"
+                                       data-tracking-data="null">
+                                        <span>A La Ville</span>
+                                    </a>
+                                    <div class="nav-wrapper">
+                                        <ul class="nav-list nav-lvl-2">
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/alaville/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        A La Ville
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/alavillebyknipmode/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        A La Ville by Knipmode
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/alavillebasic/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Basic
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/alavillebeletoile/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Bel&#39;Etoile
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/alavillethefashionbasement/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        The Fashion Basement
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-item-root">
+                                    <a href="/en-us/dress-your-doll/" class="hyp-top-lvl has-children"
+                                       data-tracking-data="null">
+                                        <span>Dress Your Doll</span>
+                                    </a>
+                                    <div class="nav-wrapper">
+                                        <ul class="nav-list nav-lvl-2">
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/accesoires/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Accessories
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/-boxes/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Boxes
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/dress-your-doll-display/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Displays
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/fabric-set/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Fabric Sets
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/dress-your-doll-dollies/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Making Couture Outfits
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/dress-your-doll/marketing/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Marketing
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/dress-your-doll-patternsets/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Pattern sets
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-item-root">
+                                    <a href="/en-us/editex/" class="hyp-top-lvl has-children"
+                                       data-tracking-data="null">
+                                        <span>Editex</span>
+                                    </a>
+                                    <div class="nav-wrapper">
+                                        <ul class="nav-list nav-lvl-2">
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/editexbasic/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Basic
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/editexbeletoile/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Bel&#39;Etoile
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/editexevamouton/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Eva Mouton
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/leloupart/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Le Loup art
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/editexsignature/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Signature
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/editexwisjdesigns/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Wisj Designs
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-item-root">
+                                    <a href="/en-us/imaski/" class="hyp-top-lvl"
+                                       data-tracking-data="null">
+                                        <span>iMaski</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item nav-item-root">
+                                    <a href="/en-us/lan-arte/" class="hyp-top-lvl has-children"
+                                       data-tracking-data="null">
+                                        <span>LanArte</span>
+                                    </a>
+                                    <div class="nav-wrapper">
+                                        <ul class="nav-list nav-lvl-2">
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/lanarte-animals/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Animals
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/lanarte/classic/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Classic
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/lanarte/culture/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Culture
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/homeandgarden/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Home and Garden
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/lanarte/marjolein-bastin/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Marjolein Bastin
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/lanarte/marketing/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Marketing
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/romance/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Romance
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/theartofdotting/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        The Art of Dotting
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/theartofpaintinglanarte/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        The Art of Painting
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-item-root">
+                                    <a href="/en-us/vervaco/" class="hyp-top-lvl has-children"
+                                       data-tracking-data="null">
+                                        <span>Vervaco </span>
+                                    </a>
+                                    <div class="nav-wrapper">
+                                        <ul class="nav-list nav-lvl-2">
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/accessories_/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Accessories
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/vervaco/schuinespanssteek/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Angled Clamping Stitch
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/vervaco/canvaskits/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Canvas kits
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/vervaco/confectie/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Confection
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/counted-cross-stitch-/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Counted Cross Stitch
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/craftkitswithfelt/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Craft kits with felt
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/cross-stitch/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Cross Stitch
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/daffysdiykits/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Daffy&#39;s DIY Kits
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/diamondpainting/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Diamond Painting
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/vervaco/disney/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Disney
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/vervacodisplay/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Displays
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/embroidery/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Embroidery
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/vervaco/embroidery-cards/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Embroidery Cards
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/evamoutonxstitch/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Eva Mouton
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/gorjuss/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Gorjuss
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/vervaco/hellokitty/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Hello Kitty
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/ipaintvervaco/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        iPaint
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/ipaintanddot/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        iPaint &amp; Dot
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/kits4kids/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Kits4kids
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/vervaco/latchhook/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Latch Hook
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/latchhookandchainstitch/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Latch hook/Chain Stitch
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/spansteek/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Longstitch
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/vervaco/marketing/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Marketing
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/vervaco/maya/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Maya the Bee
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/popcorn/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Popcorn
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/vervacokleine-telpakketten/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Small Counted X-Stitch
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/vervaco/tablecloths/" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Tablecloths
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-item-root">
+                                    <a href="/en-us/secretstitchalong" class="hyp-top-lvl"
+                                       data-tracking-data="null">
+                                        <span>Secret Stitch Along</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item nav-item-root">
+                                    <a href="/en-us/new/" class="hyp-top-lvl"
+                                       data-tracking-data="null">
+                                        <span>New</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item nav-item-root">
+                                    <a href="/en-us/sale/" class="hyp-top-lvl"
+                                       data-tracking-data="null">
+                                        <span>Sale</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item nav-item-root">
+                                    <a href="/en-us/folders" class="hyp-top-lvl has-children"
+                                       data-tracking-data="null">
+                                        <span>Catalogues</span>
+                                    </a>
+                                    <div class="nav-wrapper">
+                                        <ul class="nav-list nav-lvl-2">
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/cataloguevervaco" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Vervaco
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/cataloguelanarte" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        LanArte
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/cataloguedressyourdoll" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Dress Your Doll
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                            <li class="nav-item nav-item-block">
+                                                <div class="wrapper">
+                                                    <a href="/en-us/catalogueschachenmayr" class="font-h4"
+                                                       data-tracking-data="null">
+                                                        Schachenmayr
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="separator"></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item nav-item-root">
+                                    <a href="/en-us/contact-us" class="hyp-top-lvl"
+                                       data-tracking-data="null">
+                                        <span>Contact</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item nav-item-root">
+                                    <a href="/en-us/tips-and-tricks" class="hyp-top-lvl"
+                                       data-tracking-data="null">
+                                        <span>Tips and Tricks</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="above-content colored-header-desktop" data-bg-src="">
+            <div class="center">
+                <div class="breadcrumbs font-smaller">
+                    <ul class="reset">
+                        <li>
+                            <a href="/en-us/" class="hyp">Home</a>
+                        </li>
+                        <li class="arrow-red current">
+                            <a href="/en-us/lan-arte/" class="hyp">LanArte</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="combined-header">
+                    <div class="h1-holder">
+                        <h1>LanArte - Embroidery kits</h1>
+                    </div>
+                    <div class="combined-description">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="center">
+
+
+
+
+
+                <div class="columns-general compact rtl">
+                    <div class="column wide border-simple-left">
+                        <div id="productListPage">
+
+
+
+
+                            <div class="panel" id="product-list-panel">
+                                <div class="panel-header">
+                                    <div class="counter-inside">
+                                        355 <span>product(s) found</span>
+                                    </div>
+                                    <div class="view-changer changer-list-mode">
+                                        <span>
+                                            Show product:
+                                            <a href="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;count=13&amp;viewMode=list" class="btn-view to-list" title="List view" rel="nofollow"></a>
+                                            <a href="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;count=13" class="btn-view to-grid" title="Grid view" rel="nofollow"></a>
+                                        </span>
+                                    </div>
+                                    <div class="sorter-inside text-right">
+                                        <div class="sorting">
+                                            <form autocomplete="off">
+                                                <span class="lbl">Sort by:</span>
+                                                <div class="ddlb ddlb-sorting">
+                                                    <select id="Sorting" name="Sorting">
+                                                        <option value="/en-us/lan-arte/embroidery-kits/?sort=Id&amp;count=13&amp;viewMode=list">Item No. - ascending</option>
+                                                        <option value="/en-us/lan-arte/embroidery-kits/?count=13&amp;viewMode=list">Item No. - descending</option>
+                                                        <option value="/en-us/lan-arte/embroidery-kits/?sort=Price&amp;count=13&amp;viewMode=list">Price - ascending</option>
+                                                        <option value="/en-us/lan-arte/embroidery-kits/?sort=Price_desc&amp;count=13&amp;viewMode=list">Price - descending</option>
+                                                        <option value="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason&amp;count=13&amp;viewMode=list">Season - ascending</option>
+                                                        <option selected="selected" value="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;count=13&amp;viewMode=list">Season - descending</option>
+                                                    </select>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <ul class="product-list reset list-mode" id="list-of-products">
+                                    <li data-id="PN-0201763">
+                                        <div class="product-tile" itemscope itemtype="http://schema.org/Product" data-tracking-data="null">
+                                            <div class="product-img">
+                                                <a class="hyp-thumbnail" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-holly-jolly-amaryllis-pn--0201763?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                    <span class="thumbnail">
+                                                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/product/image/small/pn-0201763_1.jpg" title="Counted cross stitch kit Holly Jolly Amaryllis" alt="pn-0201763_1.jpg" data-src-original="all" />
+                                                        <noscript>
+                                                            <img src="/product/image/small/pn-0201763_1.jpg" alt="pn-0201763_1.jpg" title="Counted cross stitch kit Holly Jolly Amaryllis" itemprop="image" />
+                                                        </noscript>
+                                                    </span>
+
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="product-description">
+                                                    <a class="product-title" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-holly-jolly-amaryllis-pn--0201763?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                        <span itemprop="name">Counted cross stitch kit Holly Jolly Amaryllis</span>
+                                                    </a>
+                                                    <div class="product-id-stock">
+                                                        <span class="product-id">
+                                                            Item No.
+                                                            <span itemprop="productID">PN-0201763</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-attributes">PN-0201763 | Lanarte | Counted cross stitch kit Holly Jolly Amaryllis | STUKS | 315 | 2023/4</div>
+                                                </div>
+                                                <div class="product-action" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-id="PN-0200984">
+                                        <div class="product-tile" itemscope itemtype="http://schema.org/Product" data-tracking-data="null">
+                                            <div class="product-img">
+                                                <a class="hyp-thumbnail" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-on-the-lookout-pn--0200984?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                    <span class="thumbnail">
+                                                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/product/image/small/pn-0200984_1.jpg" title="Counted cross stitch kit On the lookout" alt="pn-0200984_1.jpg" data-src-original="all" />
+                                                        <noscript>
+                                                            <img src="/product/image/small/pn-0200984_1.jpg" alt="pn-0200984_1.jpg" title="Counted cross stitch kit On the lookout" itemprop="image" />
+                                                        </noscript>
+                                                    </span>
+
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="product-description">
+                                                    <a class="product-title" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-on-the-lookout-pn--0200984?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                        <span itemprop="name">Counted cross stitch kit On the lookout</span>
+                                                    </a>
+                                                    <div class="product-id-stock">
+                                                        <span class="product-id">
+                                                            Item No.
+                                                            <span itemprop="productID">PN-0200984</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-attributes">PN-0200984 | Lanarte | Counted cross stitch kit On the lookout | STUKS | 315 | 2023/4</div>
+                                                </div>
+                                                <div class="product-action" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-id="PN-0200466">
+                                        <div class="product-tile" itemscope itemtype="http://schema.org/Product" data-tracking-data="null">
+                                            <div class="product-img">
+                                                <a class="hyp-thumbnail" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-one-flower-of-each-pn--0200466?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                    <span class="thumbnail">
+                                                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/product/image/small/pn-0200466_1.jpg" title="Counted cross stitch kit One flower of each" alt="pn-0200466_1.jpg" data-src-original="all" />
+                                                        <noscript>
+                                                            <img src="/product/image/small/pn-0200466_1.jpg" alt="pn-0200466_1.jpg" title="Counted cross stitch kit One flower of each" itemprop="image" />
+                                                        </noscript>
+                                                    </span>
+
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="product-description">
+                                                    <a class="product-title" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-one-flower-of-each-pn--0200466?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                        <span itemprop="name">Counted cross stitch kit One flower of each</span>
+                                                    </a>
+                                                    <div class="product-id-stock">
+                                                        <span class="product-id">
+                                                            Item No.
+                                                            <span itemprop="productID">PN-0200466</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-attributes">PN-0200466 | Lanarte | Counted cross stitch kit One flower of each | STUKS | 315 | 2023/4</div>
+                                                </div>
+                                                <div class="product-action" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-id="PN-0198291">
+                                        <div class="product-tile" itemscope itemtype="http://schema.org/Product" data-tracking-data="null">
+                                            <div class="product-img">
+                                                <a class="hyp-thumbnail" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-holly-jolly-amaryllis-pn--0198291?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                    <span class="thumbnail">
+                                                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/product/image/small/pn-0198291_1.jpg" title="Counted cross stitch kit Holly Jolly Amaryllis" alt="pn-0198291_1.jpg" data-src-original="all" />
+                                                        <noscript>
+                                                            <img src="/product/image/small/pn-0198291_1.jpg" alt="pn-0198291_1.jpg" title="Counted cross stitch kit Holly Jolly Amaryllis" itemprop="image" />
+                                                        </noscript>
+                                                    </span>
+
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="product-description">
+                                                    <a class="product-title" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-holly-jolly-amaryllis-pn--0198291?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                        <span itemprop="name">Counted cross stitch kit Holly Jolly Amaryllis</span>
+                                                    </a>
+                                                    <div class="product-id-stock">
+                                                        <span class="product-id">
+                                                            Item No.
+                                                            <span itemprop="productID">PN-0198291</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-attributes">PN-0198291 | Lanarte | Counted cross stitch kit Holly Jolly Amaryllis | STUKS | 315 | 2023/4</div>
+                                                </div>
+                                                <div class="product-action" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-id="PN-0201471">
+                                        <div class="product-tile" itemscope itemtype="http://schema.org/Product" data-tracking-data="null">
+                                            <div class="product-img">
+                                                <a class="hyp-thumbnail" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-flower-crown-fox-pn--0201471?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                    <span class="thumbnail">
+                                                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/product/image/small/pn-0201471_1.jpg" title="Counted cross stitch kit Flower crown fox" alt="pn-0201471_1.jpg" data-src-original="all" />
+                                                        <noscript>
+                                                            <img src="/product/image/small/pn-0201471_1.jpg" alt="pn-0201471_1.jpg" title="Counted cross stitch kit Flower crown fox" itemprop="image" />
+                                                        </noscript>
+                                                    </span>
+
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="product-description">
+                                                    <a class="product-title" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-flower-crown-fox-pn--0201471?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                        <span itemprop="name">Counted cross stitch kit Flower crown fox</span>
+                                                    </a>
+                                                    <div class="product-id-stock">
+                                                        <span class="product-id">
+                                                            Item No.
+                                                            <span itemprop="productID">PN-0201471</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-attributes">PN-0201471 | Lanarte | Counted cross stitch kit Flower crown fox | STUKS | 315 | 2023/3</div>
+                                                </div>
+                                                <div class="product-action" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-id="PN-0200867">
+                                        <div class="product-tile" itemscope itemtype="http://schema.org/Product" data-tracking-data="null">
+                                            <div class="product-img">
+                                                <a class="hyp-thumbnail" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-flower-crown-bear-pn--0200867?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                    <span class="thumbnail">
+                                                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/product/image/small/pn-0200867_1.jpg" title="Counted cross stitch kit Flower crown bear" alt="pn-0200867_1.jpg" data-src-original="all" />
+                                                        <noscript>
+                                                            <img src="/product/image/small/pn-0200867_1.jpg" alt="pn-0200867_1.jpg" title="Counted cross stitch kit Flower crown bear" itemprop="image" />
+                                                        </noscript>
+                                                    </span>
+
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="product-description">
+                                                    <a class="product-title" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-flower-crown-bear-pn--0200867?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                        <span itemprop="name">Counted cross stitch kit Flower crown bear</span>
+                                                    </a>
+                                                    <div class="product-id-stock">
+                                                        <span class="product-id">
+                                                            Item No.
+                                                            <span itemprop="productID">PN-0200867</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-attributes">PN-0200867 | Lanarte | Counted cross stitch kit Flower crown bear | STUKS | 315 | 2023/3</div>
+                                                </div>
+                                                <div class="product-action" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-id="PN-0200685">
+                                        <div class="product-tile" itemscope itemtype="http://schema.org/Product" data-tracking-data="null">
+                                            <div class="product-img">
+                                                <a class="hyp-thumbnail" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-headscarf-model-pn--0200685?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                    <span class="thumbnail">
+                                                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/product/image/small/pn-0200685_1.jpg" title="Counted cross stitch kit Headscarf model" alt="pn-0200685_1.jpg" data-src-original="all" />
+                                                        <noscript>
+                                                            <img src="/product/image/small/pn-0200685_1.jpg" alt="pn-0200685_1.jpg" title="Counted cross stitch kit Headscarf model" itemprop="image" />
+                                                        </noscript>
+                                                    </span>
+
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="product-description">
+                                                    <a class="product-title" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-headscarf-model-pn--0200685?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                        <span itemprop="name">Counted cross stitch kit Headscarf model</span>
+                                                    </a>
+                                                    <div class="product-id-stock">
+                                                        <span class="product-id">
+                                                            Item No.
+                                                            <span itemprop="productID">PN-0200685</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-attributes">PN-0200685 | Lanarte | Counted cross stitch kit Headscarf model | STUKS | 315 | 2023/3</div>
+                                                </div>
+                                                <div class="product-action" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-id="PN-0200967">
+                                        <div class="product-tile" itemscope itemtype="http://schema.org/Product" data-tracking-data="null">
+                                            <div class="product-img">
+                                                <a class="hyp-thumbnail" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-thai-hill-tribe-girl-pn--0200967?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                    <span class="thumbnail">
+                                                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/product/image/small/pn-0200967_1.jpg" title="Counted cross stitch kit Thai hill tribe girl" alt="pn-0200967_1.jpg" data-src-original="all" />
+                                                        <noscript>
+                                                            <img src="/product/image/small/pn-0200967_1.jpg" alt="pn-0200967_1.jpg" title="Counted cross stitch kit Thai hill tribe girl" itemprop="image" />
+                                                        </noscript>
+                                                    </span>
+
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="product-description">
+                                                    <a class="product-title" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-thai-hill-tribe-girl-pn--0200967?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                        <span itemprop="name">Counted cross stitch kit Thai hill tribe girl</span>
+                                                    </a>
+                                                    <div class="product-id-stock">
+                                                        <span class="product-id">
+                                                            Item No.
+                                                            <span itemprop="productID">PN-0200967</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-attributes">PN-0200967 | Lanarte | Counted cross stitch kit Thai hill tribe girl | STUKS | 315 | 2023/2024</div>
+                                                </div>
+                                                <div class="product-action" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-id="PN-0200962">
+                                        <div class="product-tile" itemscope itemtype="http://schema.org/Product" data-tracking-data="null">
+                                            <div class="product-img">
+                                                <a class="hyp-thumbnail" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-thai-hill-tribe-girl-pn--0200962?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                    <span class="thumbnail">
+                                                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/product/image/small/pn-0200962_1.jpg" title="Counted cross stitch kit Thai hill tribe girl" alt="pn-0200962_1.jpg" data-src-original="all" />
+                                                        <noscript>
+                                                            <img src="/product/image/small/pn-0200962_1.jpg" alt="pn-0200962_1.jpg" title="Counted cross stitch kit Thai hill tribe girl" itemprop="image" />
+                                                        </noscript>
+                                                    </span>
+
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="product-description">
+                                                    <a class="product-title" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-thai-hill-tribe-girl-pn--0200962?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                        <span itemprop="name">Counted cross stitch kit Thai hill tribe girl</span>
+                                                    </a>
+                                                    <div class="product-id-stock">
+                                                        <span class="product-id">
+                                                            Item No.
+                                                            <span itemprop="productID">PN-0200962</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-attributes">PN-0200962 | Lanarte | Counted cross stitch kit Thai hill tribe girl | STUKS | 315 | 2023/2024</div>
+                                                </div>
+                                                <div class="product-action" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-id="PN-0200490">
+                                        <div class="product-tile" itemscope itemtype="http://schema.org/Product" data-tracking-data="null">
+                                            <div class="product-img">
+                                                <a class="hyp-thumbnail" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-close-up-blue-tit-pn--0200490?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                    <span class="thumbnail">
+                                                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/product/image/small/pn-0200490_1.jpg" title="Counted cross stitch kit Close-up Blue tit" alt="pn-0200490_1.jpg" data-src-original="all" />
+                                                        <noscript>
+                                                            <img src="/product/image/small/pn-0200490_1.jpg" alt="pn-0200490_1.jpg" title="Counted cross stitch kit Close-up Blue tit" itemprop="image" />
+                                                        </noscript>
+                                                    </span>
+
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="product-description">
+                                                    <a class="product-title" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-close-up-blue-tit-pn--0200490?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                        <span itemprop="name">Counted cross stitch kit Close-up Blue tit</span>
+                                                    </a>
+                                                    <div class="product-id-stock">
+                                                        <span class="product-id">
+                                                            Item No.
+                                                            <span itemprop="productID">PN-0200490</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-attributes">PN-0200490 | Lanarte | Counted cross stitch kit Close-up Blue tit | STUKS | 195 | 2023/2024</div>
+                                                </div>
+                                                <div class="product-action" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-id="PN-0200096">
+                                        <div class="product-tile" itemscope itemtype="http://schema.org/Product" data-tracking-data="null">
+                                            <div class="product-img">
+                                                <a class="hyp-thumbnail" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-flying-kingfisher-pn--0200096?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                    <span class="thumbnail">
+                                                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/product/image/small/pn-0200096_1.jpg" title="Counted cross stitch kit Flying kingfisher" alt="pn-0200096_1.jpg" data-src-original="all" />
+                                                        <noscript>
+                                                            <img src="/product/image/small/pn-0200096_1.jpg" alt="pn-0200096_1.jpg" title="Counted cross stitch kit Flying kingfisher" itemprop="image" />
+                                                        </noscript>
+                                                    </span>
+
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="product-description">
+                                                    <a class="product-title" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-flying-kingfisher-pn--0200096?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                        <span itemprop="name">Counted cross stitch kit Flying kingfisher</span>
+                                                    </a>
+                                                    <div class="product-id-stock">
+                                                        <span class="product-id">
+                                                            Item No.
+                                                            <span itemprop="productID">PN-0200096</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-attributes">PN-0200096 | Lanarte | Counted cross stitch kit Flying kingfisher | STUKS | 315 | 2023/2024</div>
+                                                </div>
+                                                <div class="product-action" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-id="PN-0200091">
+                                        <div class="product-tile" itemscope itemtype="http://schema.org/Product" data-tracking-data="null">
+                                            <div class="product-img">
+                                                <a class="hyp-thumbnail" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-flying-kingfisher-pn--0200091?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                    <span class="thumbnail">
+                                                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/product/image/small/pn-0200091_1.jpg" title="Counted cross stitch kit Flying kingfisher" alt="pn-0200091_1.jpg" data-src-original="all" />
+                                                        <noscript>
+                                                            <img src="/product/image/small/pn-0200091_1.jpg" alt="pn-0200091_1.jpg" title="Counted cross stitch kit Flying kingfisher" itemprop="image" />
+                                                        </noscript>
+                                                    </span>
+
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="product-description">
+                                                    <a class="product-title" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-flying-kingfisher-pn--0200091?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                        <span itemprop="name">Counted cross stitch kit Flying kingfisher</span>
+                                                    </a>
+                                                    <div class="product-id-stock">
+                                                        <span class="product-id">
+                                                            Item No.
+                                                            <span itemprop="productID">PN-0200091</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-attributes">PN-0200091 | Lanarte | Counted cross stitch kit Flying kingfisher | STUKS | 315 | 2023/2024</div>
+                                                </div>
+                                                <div class="product-action" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-id="PN-0199708">
+                                        <div class="product-tile" itemscope itemtype="http://schema.org/Product" data-tracking-data="null">
+                                            <div class="product-img">
+                                                <a class="hyp-thumbnail" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-wildflower-rest-stop-pn--0199708?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                    <span class="thumbnail">
+                                                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="/product/image/small/pn-0199708_1.jpg" title="Counted cross stitch kit Wildflower rest stop" alt="pn-0199708_1.jpg" data-src-original="all" />
+                                                        <noscript>
+                                                            <img src="/product/image/small/pn-0199708_1.jpg" alt="pn-0199708_1.jpg" title="Counted cross stitch kit Wildflower rest stop" itemprop="image" />
+                                                        </noscript>
+                                                    </span>
+
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <div class="product-description">
+                                                    <a class="product-title" href="/en-us/lan-arte/embroidery-kits/counted-cross-stitch-kit-wildflower-rest-stop-pn--0199708?returnurl=%2fen-us%2flan-arte%2fembroidery-kits%2f%3fsort%3dpfsseason_desc%26count%3d13%26viewmode%3dlist" data-product-url>
+                                                        <span itemprop="name">Counted cross stitch kit Wildflower rest stop</span>
+                                                    </a>
+                                                    <div class="product-id-stock">
+                                                        <span class="product-id">
+                                                            Item No.
+                                                            <span itemprop="productID">PN-0199708</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-attributes">PN-0199708 | Lanarte | Counted cross stitch kit Wildflower rest stop | STUKS | 315 | 2023/2024</div>
+                                                </div>
+                                                <div class="product-action" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                                <div class="panel-footer">
+                                    <div class="paging-control" data-target-id="list-of-products">
+
+                                        <div class="lazy-load-more" data-loader="productsLoader" href="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list&amp;page=3" data-last-page="35" data-page="1">
+                                            <img src="/content/files/icons/progress-indicator.gif" alt="Loading" /><span>Loading</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-control last-viewed no-underline">
+                                <ul></ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="column column-facets">
+
+
+                        <div class="filters-wrapper gray-header-phone">
+                            <div class="filter-title collapsed font-btn font-btn-big">Filters</div>
+                            <div class="facets multiselect-mode">
+                                <h4>Your selection:</h4>
+                                <div class="facet-selected">
+                                    <div class="hdr expanded">
+                                        <span class="facet-title">Type</span>
+                                    </div>
+                                    <div class="cnt">
+                                        <ul class="reset list-facets limited">
+                                            <li>
+                                                <a href="/en-us/lan-arte/?sort=PfsSeason_desc&amp;viewMode=list" class="hyp-remove" rel="nofollow" title="Delete">
+                                                    X
+                                                </a>
+                                                <div class="facet-item ellipsis" title="Embroidery kits">
+                                                    Embroidery kits
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <a class="hyp-toggle">
+                                            <span class="expand">Show all…</span>
+                                            <span class="collapse">Collapse</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="clear-facets-selection">
+                                    <a class="hyp" href="/en-us/lan-arte/?sort=PfsSeason_desc&amp;viewMode=list" rel="nofollow">Clear selection</a>
+                                </div>
+                                <div class="facet">
+                                    <div class="hdr expanded">
+                                        <h4>Type</h4>
+                                    </div>
+                                    <div class="cnt">
+                                        <ul class="reset list-facets limited">
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" rel="nofollow" title="Embroidery kits">
+                                                        <span class="chb"><input name="HC001" type="checkbox" data-uncheck="/en-us/lan-arte/?sort=PfsSeason_desc&amp;viewMode=list" checked /><ins><!----></ins></span>
+                                                        Embroidery kits
+                                                    </a>
+                                                </label>
+                                                <span class="count">(0)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits,marketing/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" rel="nofollow" title="marketing">
+                                                        <span class="chb"><input name="HC027" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        marketing
+                                                    </a>
+                                                </label>
+                                                <span class="count">(1)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits,diamond-painting/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" rel="nofollow" title="Diamond Painting">
+                                                        <span class="chb"><input name="HC061" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        Diamond Painting<br>
+                                                    </a>
+                                                </label>
+                                                <span class="count">(7)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits,paint-by-number/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" rel="nofollow" title="Paint by number">
+                                                        <span class="chb"><input name="HC065" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        Paint by number<br>
+                                                    </a>
+                                                </label>
+                                                <span class="count">(10)</span>
+                                            </li>
+                                        </ul>
+                                        <a class="hyp-toggle expanded">
+                                            <span class="expand">Show all…</span>
+                                            <span class="collapse">Collapse</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="facet">
+                                    <div class="hdr expanded">
+                                        <h4>Theme</h4>
+                                    </div>
+                                    <div class="cnt">
+                                        <ul class="reset list-facets limited">
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/animals/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="Animals">
+                                                        <span class="chb"><input name="ANIMALS" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        Animals<br>
+                                                    </a>
+                                                </label>
+                                                <span class="count">(62)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/flowers/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="Flowers">
+                                                        <span class="chb"><input name="BLOEMEN" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        Flowers<br>
+                                                    </a>
+                                                </label>
+                                                <span class="count">(4)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/classic/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="Classic">
+                                                        <span class="chb"><input name="CLASSIC" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        Classic<br>
+                                                    </a>
+                                                </label>
+                                                <span class="count">(25)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/culture/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="Culture">
+                                                        <span class="chb"><input name="CULTURE" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        Culture<br>
+                                                    </a>
+                                                </label>
+                                                <span class="count">(42)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/home-amp-garden/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="Home &amp; Garden">
+                                                        <span class="chb"><input name="HOMEGARDEN" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        Home &amp; Garden<br>
+                                                    </a>
+                                                </label>
+                                                <span class="count">(70)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/maria-van-scharenburg/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="Maria Van Scharenburg">
+                                                        <span class="chb"><input name="MARIAVS" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        Maria Van Scharenburg<br>
+                                                    </a>
+                                                </label>
+                                                <span class="count">(7)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/marjolein-bastin/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="Marjolein Bastin">
+                                                        <span class="chb"><input name="MARJOLEINB" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        Marjolein Bastin<br>
+                                                    </a>
+                                                </label>
+                                                <span class="count">(95)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/people/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="People">
+                                                        <span class="chb"><input name="MENSEN" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        People<br>
+                                                    </a>
+                                                </label>
+                                                <span class="count">(4)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/romance/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="Romance">
+                                                        <span class="chb"><input name="ROMANCE" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        Romance<br>
+                                                    </a>
+                                                </label>
+                                                <span class="count">(41)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/romance-nbsp/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="Romance&nbsp;">
+                                                        <span class="chb"><input name="ROMANTIEK" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        Romance&nbsp;<br>
+                                                    </a>
+                                                </label>
+                                                <span class="count">(2)</span>
+                                            </li>
+                                        </ul>
+                                        <a class="hyp-toggle expanded">
+                                            <span class="expand">Show all…</span>
+                                            <span class="collapse">Collapse</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="facet">
+                                    <div class="hdr expanded">
+                                        <h4>Age Category</h4>
+                                    </div>
+                                    <div class="cnt">
+                                        <ul class="reset list-facets limited">
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/all-theme/18-99/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="18 - 99">
+                                                        <span class="chb"><input name="18 - 99" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        18 - 99
+                                                    </a>
+                                                </label>
+                                                <span class="count">(354)</span>
+                                            </li>
+                                        </ul>
+                                        <a class="hyp-toggle expanded">
+                                            <span class="expand">Show all…</span>
+                                            <span class="collapse">Collapse</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="facet">
+                                    <div class="hdr expanded">
+                                        <h4>Season</h4>
+                                    </div>
+                                    <div class="cnt">
+                                        <ul class="reset list-facets limited">
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/all-theme/all-age-category/2011/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="2011">
+                                                        <span class="chb"><input name="2011" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        2011
+                                                    </a>
+                                                </label>
+                                                <span class="count">(1)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/all-theme/all-age-category/2012/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="2012">
+                                                        <span class="chb"><input name="2012" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        2012
+                                                    </a>
+                                                </label>
+                                                <span class="count">(1)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/all-theme/all-age-category/2013/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="2013">
+                                                        <span class="chb"><input name="2013" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        2013
+                                                    </a>
+                                                </label>
+                                                <span class="count">(4)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/all-theme/all-age-category/2013-2014/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="2013/2014">
+                                                        <span class="chb"><input name="2013/2014" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        2013/2014
+                                                    </a>
+                                                </label>
+                                                <span class="count">(42)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/all-theme/all-age-category/2015-2016/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="2015 2016">
+                                                        <span class="chb"><input name="2015 2016" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        2015 2016
+                                                    </a>
+                                                </label>
+                                                <span class="count">(4)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/all-theme/all-age-category/2016-2018/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="2016/2018">
+                                                        <span class="chb"><input name="2016/2018" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        2016/2018
+                                                    </a>
+                                                </label>
+                                                <span class="count">(28)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/all-theme/all-age-category/2019-2020/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="2019/2020">
+                                                        <span class="chb"><input name="2019/2020" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        2019/2020
+                                                    </a>
+                                                </label>
+                                                <span class="count">(13)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/all-theme/all-age-category/2021-2022/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="2021/2022">
+                                                        <span class="chb"><input name="2021/2022" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        2021/2022
+                                                    </a>
+                                                </label>
+                                                <span class="count">(26)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/all-theme/all-age-category/2023-2024/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="2023/2024">
+                                                        <span class="chb"><input name="2023/2024" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        2023/2024
+                                                    </a>
+                                                </label>
+                                                <span class="count">(223)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/all-theme/all-age-category/2023-3/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="2023/3">
+                                                        <span class="chb"><input name="2023/3" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        2023/3
+                                                    </a>
+                                                </label>
+                                                <span class="count">(3)</span>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <a href="/en-us/lan-arte/embroidery-kits/all-theme/all-age-category/2023-4/?sort=PfsSeason_desc&amp;viewMode=list" class="facet-item ellipsis" title="2023/4">
+                                                        <span class="chb"><input name="2023/4" type="checkbox" data-uncheck="/en-us/lan-arte/embroidery-kits/?sort=PfsSeason_desc&amp;viewMode=list" /><ins><!----></ins></span>
+                                                        2023/4
+                                                    </a>
+                                                </label>
+                                                <span class="count">(4)</span>
+                                            </li>
+                                        </ul>
+                                        <a class="hyp-toggle expanded">
+                                            <span class="expand">Show all…</span>
+                                            <span class="collapse">Collapse</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div></div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <footer>
+            <div class="center">
+                <div class="columns-general top">
+
+                    <div class="column sitemap">
+                        <span class="font-h4">Sitemap</span>
+                        <ul class="sitemap-nav">
+                            <li>
+                                <a class="hyp" href="/en-us/">Home</a>
+
+                            </li>
+                            <li>
+                                <a class="hyp" href="/en-us/profile/login">Login</a>
+
+                            </li>
+                            <li>
+                                <a class="hyp" href="/en-us/profile/">My account</a>
+
+                            </li>
+                            <li>
+                                <a class="hyp" href="/en-us/shop/basket">Shopping cart</a>
+
+                            </li>
+                            <li>
+                                <a class="hyp" href="/en-us/profile/wishlist">Wishlist</a>
+
+                            </li>
+                            <li>
+                                <a class="hyp" href="/en-us/service">Customer service</a>
+
+                            </li>
+                            <li>
+                                <a class="hyp" href="/en-us/newsletter/subscribe">Newsletter</a>
+
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+                    <div class="column newsletter">
+                        <form action="/en-us/newsletter/subscribe" method="post">
+                            <input name="__RequestVerificationToken" type="hidden" value="2Ge5yDv5fziALnG8MJMifx7WbHP1gon1tyvqjvlwPMajGV7iYLvb6zpjm0dCj0ZIyKCyF3mb_QiNi-k7ODdx-z0j3AI1" />
+                            <span class="font-h4">Newsletter</span>
+                            <div>Subscribe to our newsletter.</div>
+                            <ul class="newsletter-line">
+                                <li>
+                                    <div class="tbx tbx-email-newsletter">
+                                        <input type="text" name="Email" id="newsletterEmail" maxlength="80" placeholder="E-mail address" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <button class="btn" title="Subscribe" type="submit">
+                                        <span class="btn-cnt">Subscribe</span>
+                                    </button>
+
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="columns-general bottom">
+
+                    <div class="column copyright">
+                        © Copyright 2023 Verachtert Store. All rights reserved.
+                    </div>
+                    <div class="column footer-nav">
+                        <a class="hyp" href="/en-us/privacy-policy">Privacy policy</a><a class="hyp" href="/en-us/conditions-of-sale" target="_blank">Conditions of sale</a><a class="hyp" href="/en-us/newsletter">Newsletter</a><a class="hyp" href="/en-us/contact-us">Contact us</a><a class="hyp" href="/en-us/faq">FAQ</a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <div id="loadingIndicator" class="loading-indicator main-loading">
+            <img src="/content/files/icons/progress-indicator.gif" alt="Loading" />
+            <div>Loading</div>
+        </div>
+    </div>
+    <input name="__RequestVerificationToken" type="hidden" value="BCANC8VUd6JeoEDxVgNAI1rBd3Z7SZn_qVDytr_tyuh-tJC6vk0PZS0KFT_1mwWgEdRzVhldwtbl1kNfxVsYQKWM2Kk1" />
+    <script type="text/javascript">
+        InitialTimeout = (function () {
+            var _timeout = setTimeout(function () {
+                var html = document.getElementsByTagName("html")[0];
+                html.className += " html-is-visible ";
+            }, 3000);
+            return _timeout;
+        })();
+        document.addEventListener("DOMContentLoaded", function (event) {
+            clearTimeout(InitialTimeout);
+            InitialTimeout = null;
+        });
+    </script>
+    <script src="/content/script/libs?v=xuMpzcRxMpmV3tpDmt-RyoRRLUYj-v7pGymQkNTee0g1&t=Default"></script>
+
+    <script src="/content/script/shop?v=JqB_m8348fo13SSKt1EhSI6PW96hKDT1OlpiK7-cwo01&t=Default"></script>
+
+
+
+
+
+
+
+</body>
+</html>

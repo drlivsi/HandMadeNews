@@ -1,13 +1,9 @@
 ﻿using Ductus.FluentDocker.Services;
 
-namespace HandmadeNews.IntegrationTests.Infrastructure
+namespace HandmadeNews.IntegrationTests.Fixture
 {
     public abstract class DockerComposeTestBase : IDisposable
     {
-        /// <summary>
-        /// Compose service is a tool for defining and running multi-container Docker applications.
-        /// https://docs.docker.com/compose/
-        /// </summary>
         protected ICompositeService? CompositeService;
         protected IHostService? DockerHost;
 

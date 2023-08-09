@@ -8,13 +8,13 @@ using HandmadeNews.Infrastructure.Parsing.Strategies;
 using HandmadeNews.Domain.Entities;
 using HandmadeNews.Domain.Enums;
 using HandmadeNews.Domain.SeedWork;
+using HandmadeNews.Infrastructure.Models;
 using Microsoft.Extensions.Logging;
 
 namespace HandmadeNews.Infrastructure.Services
 {
     public class ParsingService : IParsingService
     {
-        private readonly IOptions<ProducersOptions> _producersOptions;
         private readonly IOptions<TelegramOptions> _telegramOptions;
         private readonly ILogger<ParsingService> _logger;
         private readonly IServiceProvider _serviceProvider;
@@ -24,12 +24,11 @@ namespace HandmadeNews.Infrastructure.Services
 
         public ParsingService(
             ILogger<ParsingService> logger,
+            IOptions<TelegramOptions> telegramOptions,
             IServiceProvider serviceProvider,
             IUnitOfWork unitOfWork,
             IParser parser,
-            HttpClient httpClient,
-            IOptions<TelegramOptions> telegramOptions,
-            IOptions<ProducersOptions> producersOptions)
+            HttpClient httpClient)
         {
             _logger = logger;
             _serviceProvider = serviceProvider;
@@ -37,77 +36,53 @@ namespace HandmadeNews.Infrastructure.Services
             _parser = parser;
             _httpClient = httpClient;
             _telegramOptions = telegramOptions;
-            _producersOptions = producersOptions;
         }
 
-        public async Task Parse()
+        public Task<ParsedItem[]> DownloadAsync(Dictionary<Type, string> producers)
         {
-            // Download html pages in parallel
-            var tasks = new List<Task<(Type parserType, string html, string domain)>>
-            {
-                DownloadHtml(typeof(LanarteParsingStrategy), _producersOptions.Value.LanarteUrl),
-                DownloadHtml(typeof(BucillaParsingStrategy), _producersOptions.Value.BucillaUrl),
-                DownloadHtml(typeof(KoolerdesignParsingStrategy), _producersOptions.Value.KoolerDesignUrl)
-            };
+            var tasks = producers.Select(
+                keyValuePair => DownloadHtmlAsync(keyValuePair.Key, keyValuePair.Value));
 
-            var aggregateTask = Task.WhenAll(tasks);
+            return Task.WhenAll(tasks);
+        }
 
-            (Type parserType, string html, string domain)[] allResults = null;
-
-            try
-            {
-                allResults = await aggregateTask;
-            }
-            catch (Exception ex)
-            {
-                if (aggregateTask.Exception != null && aggregateTask.Exception.InnerExceptions.Any())
-                {
-                    foreach (var innerException in aggregateTask.Exception.InnerExceptions)
-                    {
-                        _logger.LogError(innerException, "Something is wrong");
-                    }
-                }
-                else
-                {
-                    _logger.LogError(ex, "Something is wrong");
-                }
-            }
-
-            if (allResults == null)
-            {
-                return;
-            }
+        public List<Article> Parse(ParsedItem[] parsedItems)
+        {
+            var allArticles = new List<Article>();
 
             // Process each html
-            foreach (var taskResult in allResults)
+            foreach (var taskResult in parsedItems)
             {
-                if (string.IsNullOrEmpty(taskResult.html))
+                if (string.IsNullOrEmpty(taskResult.Html))
                     continue;
 
                 // Switch parsing strategy on the fly
-                var strategy = (IParsingStrategy)_serviceProvider.GetRequiredService(taskResult.parserType);
-                var articles = _parser.Process(strategy, taskResult.html, taskResult.domain);
+                var strategy = (IParsingStrategy)_serviceProvider.GetRequiredService(taskResult.ProducerType);
+                var articles = _parser.Process(strategy, taskResult.Html, taskResult.Domain);
 
-                // add article to the database if not exists
-                foreach (var article in articles)
-                {
-                    var existingArticle = await GetArticle(article.Producer, article.Code);
-                    if (existingArticle == null)
-                    {
-                        await _unitOfWork.ArticlesRepository.Add(article);
-                    }
-                }
-
-                _unitOfWork.Save();
+                allArticles.AddRange(articles);
             }
+
+            return allArticles;
         }
 
-
-        private async Task<(Type parsingStrategy, string html, string domain)> DownloadHtml(Type parserType, string url)
+        public async Task SaveAsync(List<Article> articles)
         {
-            var uri = new Uri(url);
-            var domain = uri.Scheme + "://" + uri.Host;
-            string html = string.Empty;
+            foreach (var article in articles)
+            {
+                var existingArticle = await GetArticle(article.Producer, article.Code);
+                if (existingArticle == null)
+                {
+                    await _unitOfWork.ArticlesRepository.Add(article);
+                }
+            }
+
+            _unitOfWork.Save();
+        }
+
+        private async Task<ParsedItem> DownloadHtmlAsync(Type parserType, string url)
+        {
+            var html = string.Empty;
 
             try
             { 
@@ -118,7 +93,12 @@ namespace HandmadeNews.Infrastructure.Services
                 _logger.LogError(ex, $"An attempt to download html failed: parserType={parserType},url={url} ");
             }
 
-            return (parserType, html, domain);
+            return new ParsedItem()
+            {
+                ProducerType = parserType,
+                Url = new Uri(url),
+                Html = html,
+            };
         }
 
         public async Task SendToTelegram()

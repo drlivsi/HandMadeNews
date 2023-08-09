@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace HandmadeNews.IntegrationTests.Infrastructure
+namespace HandmadeNews.IntegrationTests.Fixture
 {
     [CollectionDefinition(Name)]
     public class TestsCollection : ICollectionFixture<TestHost>

@@ -102,12 +102,8 @@ As a result, the HandmadeNews parser will grab information from 3 websites and s
 <p>Azure Function is deploying using Azure DevOps, you can find the pipeline here https://github.com/drlivsi/HandMadeNews/blob/main/azure-pipelines.yml</p>
 <p>On Azure Portal, you need to create all environment variables from local.settings.json and specify the correct database connection string (I use Hetzner Cloud, but you can create the database on Azure).</p>
 
-
-<h2>🛠️ How to add a new website for parsing?</h2>
-
-- Modify ProducersOptions in file src\HandmadeNews.AzureFunc\local.settings.json
-- Add new Parsing Strategy https://github.com/drlivsi/HandMadeNews/tree/main/src/HandmadeNews.Infrastructure/Parsing/Strategies
-
+<h2>🛠️ Run Unit Tests</h2>
+Copy file src\HandmadeNews.AzureFunc\local.settings.json to src\HandmadeNews.UnitTests\local.settings.json (we need only 'ProducersOptions', but it is easier to copy the file 'as is').
 
 <h2>🛠️ Run Integration Tests</h2>
 Copy file src\HandmadeNews.AzureFunc\local.settings.json to src\HandmadeNews.IntegrationTests\local.settings.json and modify DefaultConnection:
@@ -115,6 +111,12 @@ Copy file src\HandmadeNews.AzureFunc\local.settings.json to src\HandmadeNews.Int
 ```
     "DefaultConnection": "server=127.0.0.1;uid=my_user;pwd=my_password;database=my_database_test"
 ```
+
+<h2>🛠️ How to add a new website for parsing?</h2>
+
+- Modify ProducersOptions in file src\HandmadeNews.AzureFunc\local.settings.json
+- Add new Parsing Strategy https://github.com/drlivsi/HandMadeNews/tree/main/src/HandmadeNews.Infrastructure/Parsing/Strategies
+
   
 <br>
 <p align="center"><img src="/res/StandWithUkraine.jpg" /></p>

@@ -1,9 +1,11 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using HandmadeNews.AzureFunc;
+﻿using HandmadeNews.AzureFunc;
+using HandmadeNews.Infrastructure.Options;
 using HandmadeNews.Infrastructure.Services;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
-namespace HandmadeNews.IntegrationTests.Infrastructure
+namespace HandmadeNews.IntegrationTests.Fixture
 {
     public class IntegrationTestBase : MySqlTestBase
     {
@@ -11,7 +13,10 @@ namespace HandmadeNews.IntegrationTests.Infrastructure
 
         public IntegrationTestBase(TestHost testHost)
         {
-            ParserFunction = new ParserFunc(testHost.ServiceProvider.GetRequiredService<ILogger<ParserFunc>>(), testHost.ServiceProvider.GetRequiredService<IParsingService>());
+            ParserFunction = new ParserFunc(
+                testHost.ServiceProvider.GetRequiredService<ILogger<ParserFunc>>(),
+                testHost.ServiceProvider.GetRequiredService<IParsingService>(),
+                testHost.ServiceProvider.GetRequiredService<IOptions<ProducersOptions>>());
         }
 
         protected override string DockerComposeFileFullPath()

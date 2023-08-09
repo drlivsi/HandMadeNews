@@ -4,18 +4,18 @@ using Microsoft.AspNetCore.Mvc;
 using FluentAssertions;
 using Xunit;
 using HandmadeNews.AzureFunc;
-using HandmadeNews.IntegrationTests.Infrastructure;
+using HandmadeNews.IntegrationTests.Fixture;
 
 namespace HandmadeNews.IntegrationTests
 {
     [Collection(TestsCollection.Name)]
     public class ParserFuncTests : IClassFixture<IntegrationTestBase>
     {
-        readonly ParserFunc _azureFunc;
+        readonly ParserFunc _sut;
 
         public ParserFuncTests(IntegrationTestBase fixture)
         {
-            _azureFunc = fixture.ParserFunction;
+            _sut = fixture.ParserFunction;
         }
 
         [Fact]
@@ -25,7 +25,7 @@ namespace HandmadeNews.IntegrationTests
             var req = new DefaultHttpRequest(new DefaultHttpContext());
 
             // act
-            var result = await _azureFunc.Parse(req);
+            var result = await _sut.Parse(req);
 
             // Assert
             result.Should().NotBeNull();

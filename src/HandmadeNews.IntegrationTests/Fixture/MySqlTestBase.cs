@@ -1,4 +1,6 @@
-﻿using Ductus.FluentDocker.Model.Compose;
+﻿using System.Data.Common;
+using System.Net;
+using Ductus.FluentDocker.Model.Compose;
 using Ductus.FluentDocker.Services;
 using Ductus.FluentDocker.Services.Extensions;
 using Ductus.FluentDocker.Services.Impl;
@@ -11,10 +13,8 @@ using Microsoft.Extensions.Options;
 using MySql.Data.MySqlClient;
 using MySql.EntityFrameworkCore.Extensions;
 using Polly;
-using System.Data.Common;
-using System.Net;
 
-namespace HandmadeNews.IntegrationTests.Infrastructure
+namespace HandmadeNews.IntegrationTests.Fixture
 {
     public class MySqlTestBase : DockerComposeTestBase
     {
