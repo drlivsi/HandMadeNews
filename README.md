@@ -6,7 +6,7 @@
 
 <h2>Description</h2>
 
-<p>HandMadeNews is a web parser for embroidery manufacturers. As soon as the manufacturer releases something new, the service writes this information to the database and sends it to 2 telegram channels in different languages. The service sends exactly the same information to both channels, but it is always possible to manually add ads to the desired channel :)</p>
+<p>HandMadeNews is a web parser for new products released by embroidery manufacturers. When a manufacturer releases something new, the service writes this information to the database and sends it to 2 telegram channels in different languages. The service sends exactly the same information to both channels, but it is always possible to manually add ads to the desired channel :)</p>
 
 <p>It looks like this: </p>
 
