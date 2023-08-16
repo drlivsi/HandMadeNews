@@ -7,7 +7,7 @@ namespace HandmadeNews.Infrastructure.Services
     {
         Task<ParsedItem[]> DownloadAsync(Dictionary<Type, string> producers);
         List<Article> Parse(ParsedItem[] parsedItems);
-        Task SaveAsync(List<Article> articles);
+        Task SaveIfNewAsync(List<Article> articles);
         Task SendToTelegram();
     }
 }

@@ -60,7 +60,7 @@ namespace HandmadeNews.AzureFunc
             var producers = GetProducers();
             var parsedItems = await _parsingService.DownloadAsync(producers);
             var articles = _parsingService.Parse(parsedItems);
-            await _parsingService.SaveAsync(articles);
+            await _parsingService.SaveIfNewAsync(articles);
             await _parsingService.SendToTelegram();
         }
     }
